@@ -1,0 +1,105 @@
+\hypertarget{class_easemob_1_1_push}{}\doxysection{Easemob\textbackslash{}Push Class Reference}
+\label{class_easemob_1_1_push}\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_push_af3d0d9d8dab54e19a4ef0d5bb73ade5d}{update\+User\+Nickname}} (\$username, \$nickname)
+\begin{DoxyCompactList}\small\item\em Set push nickname. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_push_a0d6234014e287ea0646f62c3a776a95f}{set\+Notification\+Display\+Style}} (\$username, \$notification\+\_\+display\+\_\+style=1)
+\begin{DoxyCompactList}\small\item\em Set push message display method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_push_a99d2d3916537243c15410c408e45b17d}{open\+Notification\+No\+Disturbing}} (\$username, \$start\+Time, \$end\+Time)
+\begin{DoxyCompactList}\small\item\em Set no disturb. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_push_aab0036120d9e332074d19bb9efccd668}{close\+Notification\+No\+Disturbing}} (\$username)
+\begin{DoxyCompactList}\small\item\em Cancel push without interruption. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_push}{Push}}} is used to manage user push (set push free, etc.) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_push_aab0036120d9e332074d19bb9efccd668}\label{class_easemob_1_1_push_aab0036120d9e332074d19bb9efccd668}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!closeNotificationNoDisturbing@{closeNotificationNoDisturbing}}
+\index{closeNotificationNoDisturbing@{closeNotificationNoDisturbing}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{closeNotificationNoDisturbing()}{closeNotificationNoDisturbing()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::close\+Notification\+No\+Disturbing (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Cancel push without interruption. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_push_a99d2d3916537243c15410c408e45b17d}\label{class_easemob_1_1_push_a99d2d3916537243c15410c408e45b17d}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!openNotificationNoDisturbing@{openNotificationNoDisturbing}}
+\index{openNotificationNoDisturbing@{openNotificationNoDisturbing}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{openNotificationNoDisturbing()}{openNotificationNoDisturbing()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::open\+Notification\+No\+Disturbing (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$start\+Time,  }\item[{}]{\$end\+Time }\end{DoxyParamCaption})}
+
+
+
+Set no disturb. 
+
+Set the user to be undisturbed. During the undisturbed period, the user will not receive offline message push.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+int & {\em \$start\+Time} & The starting time of no disturbance, in hours, for example, 8 represents 8\+:00 every day \\
+\hline
+int & {\em \$end\+Time} & The end time of no disturbance, in hours, for example, 18 means that no disturbance is closed at 18\+:00 every day \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_push_a0d6234014e287ea0646f62c3a776a95f}\label{class_easemob_1_1_push_a0d6234014e287ea0646f62c3a776a95f}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!setNotificationDisplayStyle@{setNotificationDisplayStyle}}
+\index{setNotificationDisplayStyle@{setNotificationDisplayStyle}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{setNotificationDisplayStyle()}{setNotificationDisplayStyle()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::set\+Notification\+Display\+Style (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$notification\+\_\+display\+\_\+style = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Set push message display method. 
+
+Set the method of pushing messages to the client, which is timely and effective after modification. The server sends messages with different display methods to users according to different settings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+int & {\em \$notification\+\_\+display\+\_\+style} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} reminder method, 0\+: notification only; 1\+: Notice and message details; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_push_af3d0d9d8dab54e19a4ef0d5bb73ade5d}\label{class_easemob_1_1_push_af3d0d9d8dab54e19a4ef0d5bb73ade5d}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!updateUserNickname@{updateUserNickname}}
+\index{updateUserNickname@{updateUserNickname}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{updateUserNickname()}{updateUserNickname()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::update\+User\+Nickname (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$nickname }\end{DoxyParamCaption})}
+
+
+
+Set push nickname. 
+
+Set the user\textquotesingle{}s push nickname and use it when pushing offline.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+string & {\em \$nickname} & Nickname \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}

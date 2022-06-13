@@ -1,0 +1,79 @@
+\hypertarget{class_easemob_1_1_contact}{}\doxysection{Easemob\textbackslash{}Contact Class Reference}
+\label{class_easemob_1_1_contact}\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_contact_ab3ae56426dd04e1b0e24d876ef443e8c}{add}} (\$username, \$contact)
+\begin{DoxyCompactList}\small\item\em Add friends. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_contact_aa52dca8464e0aa5c14a4841bf3dce25b}{remove}} (\$username, \$contact)
+\begin{DoxyCompactList}\small\item\em Remove friends. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_contact_a661e5c33af1cb53fc5d6f5a8296130e0}{get}} (\$username)
+\begin{DoxyCompactList}\small\item\em Get friends list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_contact}{Contact}}} is used to manage contacts (add friends, etc.) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_contact_ab3ae56426dd04e1b0e24d876ef443e8c}\label{class_easemob_1_1_contact_ab3ae56426dd04e1b0e24d876ef443e8c}} 
+\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}!add@{add}}
+\index{add@{add}!Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Contact\+::add (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$contact }\end{DoxyParamCaption})}
+
+
+
+Add friends. 
+
+Friends must be users under the same app key with themselves. The maximum number of friends of each user under the free version of APP key is 1000. The maximum number of friends of different versions of APP key is different. For details, please refer to\+:\href{https://www.easemob.com/pricing/im}{\texttt{ version function introduction}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+string & {\em \$contact} & Friend user name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_contact_a661e5c33af1cb53fc5d6f5a8296130e0}\label{class_easemob_1_1_contact_a661e5c33af1cb53fc5d6f5a8296130e0}} 
+\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}!get@{get}}
+\index{get@{get}!Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Contact\+::get (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Get friends list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Friends list or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_contact_aa52dca8464e0aa5c14a4841bf3dce25b}\label{class_easemob_1_1_contact_aa52dca8464e0aa5c14a4841bf3dce25b}} 
+\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}!remove@{remove}}
+\index{remove@{remove}!Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Contact\+::remove (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$contact }\end{DoxyParamCaption})}
+
+
+
+Remove friends. 
+
+Removes a user from the user\textquotesingle{}s friends list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+string & {\em \$contact} & Friend user name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}

@@ -1,0 +1,93 @@
+\hypertarget{class_easemob_1_1_attachment}{}\doxysection{Easemob\textbackslash{}Attachment Class Reference}
+\label{class_easemob_1_1_attachment}\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_attachment_a1968a6dcf8651e5497e37fdbddcf1230}{upload\+File}} (\$file\+Name, \$restrict\+Access=false)
+\begin{DoxyCompactList}\small\item\em File upload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_attachment_a73235abd16dd37c9a45db406925d2731}{download\+File}} (\$file\+Name, \$uuid, \$share\+Secret=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Download attachments. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_attachment_a4f16ec2a4a7abf29139684ad3bb92e9e}{download\+Thumb}} (\$file\+Name, \$uuid, \$share\+Secret=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Download thumbnails. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_attachment}{Attachment}}} is used to upload and download attachments 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_attachment_a73235abd16dd37c9a45db406925d2731}\label{class_easemob_1_1_attachment_a73235abd16dd37c9a45db406925d2731}} 
+\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}!downloadFile@{downloadFile}}
+\index{downloadFile@{downloadFile}!Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{downloadFile()}{downloadFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Attachment\+::download\+File (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$uuid,  }\item[{}]{\$share\+Secret = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Download attachments. 
+
+It should be noted here that if you choose not to share the file when uploading the file, you need to bring the share secret returned above and the token of the currently logged in user in the request header to download it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & Downloaded file name \\
+\hline
+string & {\em \$uuid} & Unique ID of the file, which will be returned after the file is uploaded successfully \\
+\hline
+string & {\em \$share\+Secret} & share-\/secret，it will return after the file is uploaded successfully \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$array Download file size or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_attachment_a4f16ec2a4a7abf29139684ad3bb92e9e}\label{class_easemob_1_1_attachment_a4f16ec2a4a7abf29139684ad3bb92e9e}} 
+\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}!downloadThumb@{downloadThumb}}
+\index{downloadThumb@{downloadThumb}!Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{downloadThumb()}{downloadThumb()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Attachment\+::download\+Thumb (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$uuid,  }\item[{}]{\$share\+Secret = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Download thumbnails. 
+
+The server side supports the automatic creation of thumbnails of pictures. You can download thumbnails first, and then download large images when users need them. The only difference between this and downloading the big picture is that there is an \char`\"{}thumbnail\+: true\char`\"{} in the header. When the server sees that this is included in the header of the request, it will return the thumbnail, otherwise it will return the original big picture.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & Download thumbnail file name \\
+\hline
+string & {\em \$uuid} & Unique ID of the file, which will be returned after the file is uploaded successfully \\
+\hline
+string & {\em \$share\+Secret} & share-\/secret，it will return after the file is uploaded successfully \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$array Download file size or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_attachment_a1968a6dcf8651e5497e37fdbddcf1230}\label{class_easemob_1_1_attachment_a1968a6dcf8651e5497e37fdbddcf1230}} 
+\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}!uploadFile@{uploadFile}}
+\index{uploadFile@{uploadFile}!Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{uploadFile()}{uploadFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Attachment\+::upload\+File (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$restrict\+Access = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+File upload. 
+
+
+\begin{DoxyItemize}
+\item The size of the uploaded file cannot exceed 10m. If it exceeds 10m, the upload will fail.
+\item When uploading files, you can choose whether to restrict access rights. If you choose to restrict, a secret will be returned after the upload request is completed. Only those who know the secret and are registered users of the app can download files. If you choose not to limit, you can download as long as you are a registered user of the app.
+\item If you choose to add the secret limit, the message callback (including the callback before sending and the callback after sending) and the historical message, which involve downloading files, need to splice the secret in the download URL to download files normally;
+\item The splicing rules are as follows\+: url?share-\/secret=secret
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & Uploaded attachments \\
+\hline
+boolean & {\em \$restrict\+Access} & Controls whether the file can be obtained by anyone. This value is true. A share secret value will be added to the returned result. This value is required to access the file again. Default\+: false \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Upload file information or error 
+\end{DoxyReturn}

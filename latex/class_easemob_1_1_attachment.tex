@@ -1,0 +1,93 @@
+\hypertarget{class_easemob_1_1_attachment}{}\doxysection{Easemob\textbackslash{}Attachment类 参考}
+\label{class_easemob_1_1_attachment}\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_attachment_a1968a6dcf8651e5497e37fdbddcf1230}{upload\+File}} (\$file\+Name, \$restrict\+Access=false)
+\begin{DoxyCompactList}\small\item\em 文件上传 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_attachment_a73235abd16dd37c9a45db406925d2731}{download\+File}} (\$file\+Name, \$uuid, \$share\+Secret=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 下载附件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_attachment_a4f16ec2a4a7abf29139684ad3bb92e9e}{download\+Thumb}} (\$file\+Name, \$uuid, \$share\+Secret=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 下载缩略图 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_easemob_1_1_attachment}{Attachment}} 用来上传下载附件 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_attachment_a73235abd16dd37c9a45db406925d2731}\label{class_easemob_1_1_attachment_a73235abd16dd37c9a45db406925d2731}} 
+\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}!downloadFile@{downloadFile}}
+\index{downloadFile@{downloadFile}!Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{downloadFile()}{downloadFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Attachment\+::download\+File (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$uuid,  }\item[{}]{\$share\+Secret = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+下载附件 
+
+这里需要注意的就是，如果上传文件时候选择了文件不共享，需要在请求头中带上上面返回的 share-\/secret 和当前登录用户的 token 才能够下载。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$file\+Name} & 下载的文件名 \\
+\hline
+string & {\em \$uuid} & 文件唯一 ID，文件上传成功后会返回 \\
+\hline
+string & {\em \$share\+Secret} & share-\/secret，文件上传成功后会返回 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+int$\vert$array 下载文件的大小或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_attachment_a4f16ec2a4a7abf29139684ad3bb92e9e}\label{class_easemob_1_1_attachment_a4f16ec2a4a7abf29139684ad3bb92e9e}} 
+\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}!downloadThumb@{downloadThumb}}
+\index{downloadThumb@{downloadThumb}!Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{downloadThumb()}{downloadThumb()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Attachment\+::download\+Thumb (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$uuid,  }\item[{}]{\$share\+Secret = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+下载缩略图 
+
+在服务器端支持自动的创建图片的缩略图。可以先下载缩略图，当用户有需求的时候，再下载大图。 这里和下载大图唯一不同的就是 header 中多了一个“thumbnail\+: true”，当服务器看到过来的请求的 header 中包括这个的时候，就会返回缩略图，否则返回原始大图。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$file\+Name} & 下载缩略图的文件名 \\
+\hline
+string & {\em \$uuid} & 文件唯一 ID，文件上传成功后会返回 \\
+\hline
+string & {\em \$share\+Secret} & share-\/secret，文件上传成功后会返回 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+int$\vert$array 下载缩略图的大小或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_attachment_a1968a6dcf8651e5497e37fdbddcf1230}\label{class_easemob_1_1_attachment_a1968a6dcf8651e5497e37fdbddcf1230}} 
+\index{Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}!uploadFile@{uploadFile}}
+\index{uploadFile@{uploadFile}!Easemob\textbackslash{}Attachment@{Easemob\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{uploadFile()}{uploadFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Attachment\+::upload\+File (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$restrict\+Access = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+文件上传 
+
+
+\begin{DoxyItemize}
+\item 上传文件的大小不能超过 10 M，超过会上传失败。
+\item 在上传文件的时候可以选择是否限制访问权限，如果选择限制的话，会在上传请求完成后返回一个 secret，只有知道这个 secret，并且是 app 的注册用户，才能够下载文件。如果选择不限制的话，则只要是 app 的注册用户就能够下载。
+\item 如选择加 secret 限制的话，消息回调（包含发送前回调和发送后回调）、历史消息这些功能中涉及下载文件时，都需要在下载 url 中拼接 secret，才能正常下载文件；
+\item 拼接规则如下：url?share-\/secret=secret
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$file\+Name} & 上传的附件 \\
+\hline
+boolean & {\em \$restrict\+Access} & 控制文件是否可以被任何人获取，这个值为 true，返回结果中会添加一个 share-\/secret 值。再次访问文件需要用到这个值。默认值：false \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 上传文件信息或者错误 
+\end{DoxyReturn}

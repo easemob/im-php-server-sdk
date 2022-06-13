@@ -1,0 +1,199 @@
+\hypertarget{class_easemob_1_1_white_list}{}\doxysection{Easemob\textbackslash{}White\+List Class Reference}
+\label{class_easemob_1_1_white_list}\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a07bbc37f8e083bbf2f4f395f710bfe9d}{get\+Group\+White\+List}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Query group whitelist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_aedbfd487214e44ecae1f5f83369a8cd1}{add\+User\+To\+Group\+White\+List}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Add a single user to the group whitelist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a7f23bfbb96a0804537c02139cf7269d9}{add\+Users\+To\+Group\+White\+List}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch add users to the group whitelist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a2ef35a1f35b7ec3dae41a248d5807362}{remove\+Users\+From\+Group\+White\+List}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Remove user from group whitelist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a220a99ecc6b8fba640807e2e99a2b272}{get\+Room\+White\+List}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em Query chat room white list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_abed7ff363180dd41bcc5901385d28a78}{add\+User\+To\+Room\+White\+List}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Add a single user to the chat room whitelist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_af706a7374186fcedad4221f711e05b11}{add\+Users\+To\+Room\+White\+List}} (\$room\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch add users to chat room white list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a9890f8b6f81ea32bfc6444fdc3e2d5b0}{remove\+Users\+From\+Room\+White\+List}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Remove user from chat room whitelist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_white_list}{White\+List}}} used to manage groups, chat rooms white lists 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a7f23bfbb96a0804537c02139cf7269d9}\label{class_easemob_1_1_white_list_a7f23bfbb96a0804537c02139cf7269d9}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUsersToGroupWhiteList@{addUsersToGroupWhiteList}}
+\index{addUsersToGroupWhiteList@{addUsersToGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUsersToGroupWhiteList()}{addUsersToGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+Users\+To\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch add users to the group whitelist. 
+
+Add multiple users to the group whitelist. You can add up to 60 users at a time. After users are added to the white list, they can still send messages in the group when all members of the group are forbidden.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} id \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_af706a7374186fcedad4221f711e05b11}\label{class_easemob_1_1_white_list_af706a7374186fcedad4221f711e05b11}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUsersToRoomWhiteList@{addUsersToRoomWhiteList}}
+\index{addUsersToRoomWhiteList@{addUsersToRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUsersToRoomWhiteList()}{addUsersToRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+Users\+To\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch add users to chat room white list. 
+
+Add multiple users to the chat room whitelist. You can add up to 60 users at a time. After users are added to the chat room white list, they can still send messages in the chat room when all members of the chat room are forbidden to speak.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room id \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_aedbfd487214e44ecae1f5f83369a8cd1}\label{class_easemob_1_1_white_list_aedbfd487214e44ecae1f5f83369a8cd1}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUserToGroupWhiteList@{addUserToGroupWhiteList}}
+\index{addUserToGroupWhiteList@{addUserToGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUserToGroupWhiteList()}{addUserToGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+User\+To\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Add a single user to the group whitelist. 
+
+Query a group and add the specified individual user to the group white list. After being added to the group white list, users can still send messages in the group when all members of the group are banned. List of users in the whitelist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} id \\
+\hline
+string & {\em \$username} & user name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_abed7ff363180dd41bcc5901385d28a78}\label{class_easemob_1_1_white_list_abed7ff363180dd41bcc5901385d28a78}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUserToRoomWhiteList@{addUserToRoomWhiteList}}
+\index{addUserToRoomWhiteList@{addUserToRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUserToRoomWhiteList()}{addUserToRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+User\+To\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Add a single user to the chat room whitelist. 
+
+Adds the specified individual user to the chat room whitelist. After the user is added to the chat room white list, when the chat room is forbidden, he can still send messages in the chat room.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room id \\
+\hline
+string & {\em \$username} & user name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a07bbc37f8e083bbf2f4f395f710bfe9d}\label{class_easemob_1_1_white_list_a07bbc37f8e083bbf2f4f395f710bfe9d}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!getGroupWhiteList@{getGroupWhiteList}}
+\index{getGroupWhiteList@{getGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{getGroupWhiteList()}{getGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::get\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Query group whitelist. 
+
+Query the list of users in a group white list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & group ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Whitelist or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a220a99ecc6b8fba640807e2e99a2b272}\label{class_easemob_1_1_white_list_a220a99ecc6b8fba640807e2e99a2b272}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!getRoomWhiteList@{getRoomWhiteList}}
+\index{getRoomWhiteList@{getRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{getRoomWhiteList()}{getRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::get\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+Query chat room white list. 
+
+Query the list of users in a chat room white list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Whitelist or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a2ef35a1f35b7ec3dae41a248d5807362}\label{class_easemob_1_1_white_list_a2ef35a1f35b7ec3dae41a248d5807362}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!removeUsersFromGroupWhiteList@{removeUsersFromGroupWhiteList}}
+\index{removeUsersFromGroupWhiteList@{removeUsersFromGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{removeUsersFromGroupWhiteList()}{removeUsersFromGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::remove\+Users\+From\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Remove user from group whitelist. 
+
+Removes the specified user from the group whitelist. You can remove up to 60 users at a time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name. Multiple user names can be passed in comma separated form \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a9890f8b6f81ea32bfc6444fdc3e2d5b0}\label{class_easemob_1_1_white_list_a9890f8b6f81ea32bfc6444fdc3e2d5b0}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!removeUsersFromRoomWhiteList@{removeUsersFromRoomWhiteList}}
+\index{removeUsersFromRoomWhiteList@{removeUsersFromRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{removeUsersFromRoomWhiteList()}{removeUsersFromRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::remove\+Users\+From\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Remove user from chat room whitelist. 
+
+Remove the specified user from the chat room whitelist. You can remove up to 60 users at a time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name. Multiple user names can be passed in comma separated form \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}

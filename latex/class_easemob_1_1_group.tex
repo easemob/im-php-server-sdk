@@ -1,0 +1,608 @@
+\hypertarget{class_easemob_1_1_group}{}\doxysection{Easemob\textbackslash{}Group类 参考}
+\label{class_easemob_1_1_group}\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ac52a7ebd7adf74b67a8058a01f73943f}{list\+Groups}} (\$limit=10, \$cursor=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 获取 App 中所有的群组（可分页） \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_afe44fb1a719906d4600f931b405d06ac}{list\+All\+Groups}} ()
+\begin{DoxyCompactList}\small\item\em 获取 App 中所有的群组 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ad626d5d224560321978045ae8aaa6c25}{list\+Groups\+User\+Joined}} (\$username, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em 分页获取单个用户加入的所有群组 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_aa497e2be4f06aff856f71c5394846ba2}{list\+All\+Groups\+User\+Joined}} (\$username)
+\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a78634b2f87ee48658883c6ed36b2b583}{get\+Group}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em 获取群组详情 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_aaf21c5e19367e36653de453f54c09743}{create\+Public\+Group}} (\$owner, \$groupname, \$desc, \$members=array(), \$maxusers=200, \$members\+\_\+only=true, \$custom=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 创建公开群 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a54e2ed909378770b226baf3cff9ca0b0}{create\+Private\+Group}} (\$owner, \$groupname, \$desc, \$members=array(), \$maxusers=200, \$allowinvites=false, \$custom=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 创建私有群 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a94c60347a8898fdb1dbacfe0a4f40741}{update\+Group}} (\$data)
+\begin{DoxyCompactList}\small\item\em 修改群组信息 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ab89f3b8d5a9cdae686b12fbb11cc8d69}{destroy\+Group}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em 删除群组 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ae1cc49ed0d8726ab343f752d271c6cc0}{get\+Group\+Announcement}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em 获取群组公告 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ad693ff8ad924f42e58d2c223fd8be0aa}{update\+Group\+Announcement}} (\$group\+Id, \$announcement)
+\begin{DoxyCompactList}\small\item\em 修改群组公告 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}{get\+Group\+Share\+Files}} (\$group\+Id, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em 获取群组共享文件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a16421fb6a61cec69ad988b1fdec49a4f}{upload\+Group\+Share\+File}} (\$group\+Id, \$file\+Name)
+\begin{DoxyCompactList}\small\item\em 上传群组共享文件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}{download\+Group\+Share\+File}} (\$file\+Name, \$group\+Id, \$file\+Id)
+\begin{DoxyCompactList}\small\item\em 下载群组共享文件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}{delete\+Group\+Share\+File}} (\$group\+Id, \$file\+Id)
+\begin{DoxyCompactList}\small\item\em 删除群组共享文件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a60c1d8fe559e412f23c0164ee76662b8}{list\+Group\+Members}} (\$group\+Id, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em 分页获取群组成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a7c1b2d65ef35363f4c63e64036fa97ee}{list\+All\+Group\+Members}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em 获取群组所有成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a26b0a3c8a50ba345a8117c0bea6f786b}{add\+Group\+Member}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 添加单个群组成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a430e9ba0860f7002c99616c48fd060dd}{add\+Group\+Members}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em 批量添加群组成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a914278edfb2e024a896be5de2ce04358}{remove\+Group\+Member}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 移除单个群组成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ac005274b3290e5dc8a5efd025e1f4d0a}{remove\+Group\+Members}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em 批量移除群组成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a4d30938699ed542ce78192372bc4be35}{list\+Group\+Admins}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em 获取群管理员列表 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a7e02770021bfa574eef46ad5bc1d4745}{add\+Group\+Admin}} (\$group\+Id, \$newadmin)
+\begin{DoxyCompactList}\small\item\em 添加群管理员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a16f45ec78467c625008a7744da49989a}{remove\+Group\+Admin}} (\$group\+Id, \$oldadmin)
+\begin{DoxyCompactList}\small\item\em 移除群管理员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a851fd75be9620acc70c5c440bf3bb1f0}{update\+Group\+Owner}} (\$group\+Id, \$newowner)
+\begin{DoxyCompactList}\small\item\em 转让群组 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_easemob_1_1_group}{Group}} 用来管理群组 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_group_a7e02770021bfa574eef46ad5bc1d4745}\label{class_easemob_1_1_group_a7e02770021bfa574eef46ad5bc1d4745}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!addGroupAdmin@{addGroupAdmin}}
+\index{addGroupAdmin@{addGroupAdmin}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{addGroupAdmin()}{addGroupAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::add\+Group\+Admin (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$newadmin }\end{DoxyParamCaption})}
+
+
+
+添加群管理员 
+
+将一个群成员角色权限提升为群管理员。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$newadmin} & 添加的新管理员用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a26b0a3c8a50ba345a8117c0bea6f786b}\label{class_easemob_1_1_group_a26b0a3c8a50ba345a8117c0bea6f786b}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!addGroupMember@{addGroupMember}}
+\index{addGroupMember@{addGroupMember}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{addGroupMember()}{addGroupMember()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::add\+Group\+Member (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+添加单个群组成员 
+
+一次给群添加一个成员，不能重复添加同一个成员。如果用户已经是群成员，将添加失败，并返回错误。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$username} & 环信用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a430e9ba0860f7002c99616c48fd060dd}\label{class_easemob_1_1_group_a430e9ba0860f7002c99616c48fd060dd}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!addGroupMembers@{addGroupMembers}}
+\index{addGroupMembers@{addGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{addGroupMembers()}{addGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::add\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+批量添加群组成员 
+
+为群组添加多个成员，一次最多可以添加 60 位成员。如果所有用户均已是群成员，将添加失败，并返回错误。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+array & {\em \$usernames} & 环信用户 ID 数组 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a54e2ed909378770b226baf3cff9ca0b0}\label{class_easemob_1_1_group_a54e2ed909378770b226baf3cff9ca0b0}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!createPrivateGroup@{createPrivateGroup}}
+\index{createPrivateGroup@{createPrivateGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{createPrivateGroup()}{createPrivateGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::create\+Private\+Group (\begin{DoxyParamCaption}\item[{}]{\$owner,  }\item[{}]{\$groupname,  }\item[{}]{\$desc,  }\item[{}]{\$members = {\ttfamily array()},  }\item[{}]{\$maxusers = {\ttfamily 200},  }\item[{}]{\$allowinvites = {\ttfamily false},  }\item[{}]{\$custom = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+创建私有群 
+
+创建一个私有的群组，并设置群主、群组名称、群组描述、群成员、群成员最大人数（包括群主）、是否允许群成员邀请别人加入此群、群组扩展信息。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$owner} & 群组管理员的用户名 \\
+\hline
+string & {\em \$groupname} & 群组名称，最大长度为 128 字符。 \\
+\hline
+string & {\em \$desc} & 群组描述，最大长度为 512 字符。 \\
+\hline
+array & {\em \$members} & 群组成员，此属性为非必需，但是如果加此项，数组元素至少一个，不能超过 100 个。（注：群主 user1 不需要写入到 members 里面） \\
+\hline
+int & {\em \$maxusers} & 群组最大成员数（包括群主），值为数值类型，默认值 200，具体上限请参考 \href{https://console.easemob.com/user/login}{\texttt{ 环信即时通讯云控制台}}。 \\
+\hline
+boolean & {\em \$allowinvites} & 是否允许群成员邀请别人加入此群：true：允许群成员邀请人加入此群；false：只有群主或者管理员才可以往群里加人。 \\
+\hline
+string & {\em \$custom} & 群组扩展信息，例如可以给群组添加业务相关的标记，不要超过 1024 字符。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+string$\vert$array 群组 id 或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_aaf21c5e19367e36653de453f54c09743}\label{class_easemob_1_1_group_aaf21c5e19367e36653de453f54c09743}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!createPublicGroup@{createPublicGroup}}
+\index{createPublicGroup@{createPublicGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{createPublicGroup()}{createPublicGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::create\+Public\+Group (\begin{DoxyParamCaption}\item[{}]{\$owner,  }\item[{}]{\$groupname,  }\item[{}]{\$desc,  }\item[{}]{\$members = {\ttfamily array()},  }\item[{}]{\$maxusers = {\ttfamily 200},  }\item[{}]{\$members\+\_\+only = {\ttfamily true},  }\item[{}]{\$custom = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+创建公开群 
+
+创建一个公开的群组，并设置群主、群组名称、群组描述、群成员、群成员最大人数（包括群主）、加入群是否需要批准、群组扩展信息。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$owner} & 群组管理员的用户名 \\
+\hline
+string & {\em \$groupname} & 群组名称，最大长度为 128 字符。 \\
+\hline
+string & {\em \$desc} & 群组描述，最大长度为 512 字符。 \\
+\hline
+array & {\em \$members} & 群组成员，此属性为非必需，但是如果加此项，数组元素至少一个，不能超过 100 个。（注：群主 user1 不需要写入到 members 里面） \\
+\hline
+int & {\em \$maxusers} & 群组最大成员数（包括群主），值为数值类型，默认值 200，具体上限请参考 \href{https://console.easemob.com/user/login}{\texttt{ 环信即时通讯云控制台}}。 \\
+\hline
+boolean & {\em \$members\+\_\+only} & 用户申请入群是否需要群主或者群管理员审批，默认是 false。true：是；false：否。 \\
+\hline
+string & {\em \$custom} & 群组扩展信息，例如可以给群组添加业务相关的标记，不要超过 1024 字符。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+string$\vert$array 群组 id 或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}\label{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!deleteGroupShareFile@{deleteGroupShareFile}}
+\index{deleteGroupShareFile@{deleteGroupShareFile}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{deleteGroupShareFile()}{deleteGroupShareFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::delete\+Group\+Share\+File (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$file\+Id }\end{DoxyParamCaption})}
+
+
+
+删除群组共享文件 
+
+根据指定的群组 ID 与 file\+\_\+id 删除群组共享文件，file\+\_\+id 通过 \mbox{\hyperlink{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}{get\+Group\+Share\+Files(\$group\+Id, \$page\+Size = 10, \$page\+Num = 1)}} 获取。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$file\+Id} & 群组共享文件 id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ab89f3b8d5a9cdae686b12fbb11cc8d69}\label{class_easemob_1_1_group_ab89f3b8d5a9cdae686b12fbb11cc8d69}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!destroyGroup@{destroyGroup}}
+\index{destroyGroup@{destroyGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{destroyGroup()}{destroyGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::destroy\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+删除群组 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}\label{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!downloadGroupShareFile@{downloadGroupShareFile}}
+\index{downloadGroupShareFile@{downloadGroupShareFile}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{downloadGroupShareFile()}{downloadGroupShareFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::download\+Group\+Share\+File (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$group\+Id,  }\item[{}]{\$file\+Id }\end{DoxyParamCaption})}
+
+
+
+下载群组共享文件 
+
+根据指定的群组 ID 与 file\+\_\+id 下载群组共享文件，file\+\_\+id 通过 \mbox{\hyperlink{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}{get\+Group\+Share\+Files(\$group\+Id, \$page\+Size = 10, \$page\+Num = 1)}} 获取。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$file\+Name} & 要下载的文件路径 \\
+\hline
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$file\+Id} & 群组共享文件 id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+int$\vert$array 文件大小或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a78634b2f87ee48658883c6ed36b2b583}\label{class_easemob_1_1_group_a78634b2f87ee48658883c6ed36b2b583}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!getGroup@{getGroup}}
+\index{getGroup@{getGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{getGroup()}{getGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::get\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+获取群组详情 
+
+可以获取一个或多个群组的详情。当获取多个群组的详情时，返回所有存在的群组的详情；对于不存在的群组，返回 “group id doesn’t exist”。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID，可以以逗号分割，同时传递多个群组 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群组信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ae1cc49ed0d8726ab343f752d271c6cc0}\label{class_easemob_1_1_group_ae1cc49ed0d8726ab343f752d271c6cc0}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!getGroupAnnouncement@{getGroupAnnouncement}}
+\index{getGroupAnnouncement@{getGroupAnnouncement}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{getGroupAnnouncement()}{getGroupAnnouncement()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::get\+Group\+Announcement (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+获取群组公告 
+
+获取指定群组 ID 的群组公告。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 公告信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}\label{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!getGroupShareFiles@{getGroupShareFiles}}
+\index{getGroupShareFiles@{getGroupShareFiles}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{getGroupShareFiles()}{getGroupShareFiles()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::get\+Group\+Share\+Files (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+获取群组共享文件 
+
+分页获取指定群组 ID 的群组共享文件，之后可以根据 response 中返回的 file\+\_\+id，file\+\_\+id 是群组共享文件的唯一标识，调用 \mbox{\hyperlink{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}{download\+Group\+Share\+File(\$file\+Name, \$group\+Id, \$file\+Id)}} 下载文件，或调用 \mbox{\hyperlink{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}{delete\+Group\+Share\+File(\$group\+Id, \$file\+Id)}} 删除文件。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+int & {\em \$page\+Size} & 每页获取的群组数量。该参数仅适用于分页获取方法。默认取 10 条。 \\
+\hline
+int & {\em \$page\+Num} & 当前页码。该参数仅适用于分页获取方法。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群组文件信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a7c1b2d65ef35363f4c63e64036fa97ee}\label{class_easemob_1_1_group_a7c1b2d65ef35363f4c63e64036fa97ee}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listAllGroupMembers@{listAllGroupMembers}}
+\index{listAllGroupMembers@{listAllGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listAllGroupMembers()}{listAllGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+All\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+获取群组所有成员 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群组成员信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_afe44fb1a719906d4600f931b405d06ac}\label{class_easemob_1_1_group_afe44fb1a719906d4600f931b405d06ac}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listAllGroups@{listAllGroups}}
+\index{listAllGroups@{listAllGroups}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listAllGroups()}{listAllGroups()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+All\+Groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取 App 中所有的群组 
+
+\begin{DoxyReturn}{返回}
+array 群组列表信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_aa497e2be4f06aff856f71c5394846ba2}\label{class_easemob_1_1_group_aa497e2be4f06aff856f71c5394846ba2}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listAllGroupsUserJoined@{listAllGroupsUserJoined}}
+\index{listAllGroupsUserJoined@{listAllGroupsUserJoined}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listAllGroupsUserJoined()}{listAllGroupsUserJoined()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+All\+Groups\+User\+Joined (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+brief 获取单个用户加入的所有群组
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群组信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a4d30938699ed542ce78192372bc4be35}\label{class_easemob_1_1_group_a4d30938699ed542ce78192372bc4be35}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroupAdmins@{listGroupAdmins}}
+\index{listGroupAdmins@{listGroupAdmins}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroupAdmins()}{listGroupAdmins()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Group\+Admins (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+获取群管理员列表 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群管理员信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a60c1d8fe559e412f23c0164ee76662b8}\label{class_easemob_1_1_group_a60c1d8fe559e412f23c0164ee76662b8}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroupMembers@{listGroupMembers}}
+\index{listGroupMembers@{listGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroupMembers()}{listGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+分页获取群组成员 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+int & {\em \$page\+Size} & 每页成员数量，默认值为 10，最大为 100。 \\
+\hline
+int & {\em \$page\+Num} & 当前页码。默认值为 1。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群组成员信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ac52a7ebd7adf74b67a8058a01f73943f}\label{class_easemob_1_1_group_ac52a7ebd7adf74b67a8058a01f73943f}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroups@{listGroups}}
+\index{listGroups@{listGroups}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroups()}{listGroups()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Groups (\begin{DoxyParamCaption}\item[{}]{\$limit = {\ttfamily 10},  }\item[{}]{\$cursor = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+获取 App 中所有的群组（可分页） 
+
+
+\begin{DoxyParams}[1]{参数}
+int & {\em \$limit} & 一次获取的群组数量，默认获取 10 条。 \\
+\hline
+string & {\em \$cursor} & 分页使用，传入游标后便从游标起始的地方进行查询，类似于数据库 limit 1,5 中 1 的作用，可以理解为页码。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群组列表信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ad626d5d224560321978045ae8aaa6c25}\label{class_easemob_1_1_group_ad626d5d224560321978045ae8aaa6c25}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroupsUserJoined@{listGroupsUserJoined}}
+\index{listGroupsUserJoined@{listGroupsUserJoined}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroupsUserJoined()}{listGroupsUserJoined()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Groups\+User\+Joined (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+分页获取单个用户加入的所有群组 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+int & {\em \$page\+Size} & 每页获取的群组数量。该参数仅适用于分页获取方法。默认取 10 条。 \\
+\hline
+int & {\em \$page\+Num} & 当前页码。该参数仅适用于分页获取方法。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 群组信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a16f45ec78467c625008a7744da49989a}\label{class_easemob_1_1_group_a16f45ec78467c625008a7744da49989a}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!removeGroupAdmin@{removeGroupAdmin}}
+\index{removeGroupAdmin@{removeGroupAdmin}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{removeGroupAdmin()}{removeGroupAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::remove\+Group\+Admin (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$oldadmin }\end{DoxyParamCaption})}
+
+
+
+移除群管理员 
+
+将用户的角色从群管理员降为群普通成员。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$oldadmin} & 移除的管理员用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a914278edfb2e024a896be5de2ce04358}\label{class_easemob_1_1_group_a914278edfb2e024a896be5de2ce04358}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!removeGroupMember@{removeGroupMember}}
+\index{removeGroupMember@{removeGroupMember}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{removeGroupMember()}{removeGroupMember()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::remove\+Group\+Member (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+移除单个群组成员 
+
+从群中移除某个成员。如果被移除用户不是群成员，将移除失败，并返回错误。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$username} & 环信用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ac005274b3290e5dc8a5efd025e1f4d0a}\label{class_easemob_1_1_group_ac005274b3290e5dc8a5efd025e1f4d0a}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!removeGroupMembers@{removeGroupMembers}}
+\index{removeGroupMembers@{removeGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{removeGroupMembers()}{removeGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::remove\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+批量移除群组成员 
+
+移除群成员，用户名之间用英文逗号分隔。建议一次最多移除 60 个群成员。如果所有被移除用户均不是群成员，将移除失败，并返回错误。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+array & {\em \$username} & 环信用户 ID 数组 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a94c60347a8898fdb1dbacfe0a4f40741}\label{class_easemob_1_1_group_a94c60347a8898fdb1dbacfe0a4f40741}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!updateGroup@{updateGroup}}
+\index{updateGroup@{updateGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{updateGroup()}{updateGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::update\+Group (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+
+
+修改群组信息 
+
+修改成功的数据行会返回 true，失败为 false。请求 body 只接收 groupname、description、maxusers、membersonly、allowinvites、custom 六个属性，传不存在的字段，或者不能修改的字段会抛异常。
+
+
+\begin{DoxyParams}[1]{参数}
+array & {\em \$data} & 群组信息
+\begin{DoxyItemize}
+\item {\ttfamily groupname} string 类型，群组名称，修改时值不能包含斜杠（“/”），最大长度为 128 字符。
+\item {\ttfamily description} string 类型，群组描述，修改时值不能包含斜杠（“/”），最大长度为 512 字符。
+\item {\ttfamily maxusers} int 类型，群组成员最大数（包括群主），值为数值类型。
+\item {\ttfamily membersonly} string 类型，加入群组是否需要群主或者群管理员审批：true：是；false：否。
+\item {\ttfamily allowinvites} string 类型，是否允许群成员邀请别人加入此群：true：允许群成员邀请人加入此群；false：只有群主才可以往群里加人。
+\item {\ttfamily custom} string 类型，群组扩展信息，例如可以给群组添加业务相关的标记，不要超过 1,024 字符。 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ad693ff8ad924f42e58d2c223fd8be0aa}\label{class_easemob_1_1_group_ad693ff8ad924f42e58d2c223fd8be0aa}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!updateGroupAnnouncement@{updateGroupAnnouncement}}
+\index{updateGroupAnnouncement@{updateGroupAnnouncement}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{updateGroupAnnouncement()}{updateGroupAnnouncement()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::update\+Group\+Announcement (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$announcement }\end{DoxyParamCaption})}
+
+
+
+修改群组公告 
+
+修改指定群组 ID 的群组公告，注意群组公告的内容不能超过 512 个字符。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$announcement} & 群组公告内容 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a851fd75be9620acc70c5c440bf3bb1f0}\label{class_easemob_1_1_group_a851fd75be9620acc70c5c440bf3bb1f0}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!updateGroupOwner@{updateGroupOwner}}
+\index{updateGroupOwner@{updateGroupOwner}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{updateGroupOwner()}{updateGroupOwner()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::update\+Group\+Owner (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$newowner }\end{DoxyParamCaption})}
+
+
+
+转让群组 
+
+修改群主为同一群组中的其他成员。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$newowner} & 群组的新管理员用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a16421fb6a61cec69ad988b1fdec49a4f}\label{class_easemob_1_1_group_a16421fb6a61cec69ad988b1fdec49a4f}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!uploadGroupShareFile@{uploadGroupShareFile}}
+\index{uploadGroupShareFile@{uploadGroupShareFile}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{uploadGroupShareFile()}{uploadGroupShareFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::upload\+Group\+Share\+File (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$file\+Name }\end{DoxyParamCaption})}
+
+
+
+上传群组共享文件 
+
+上传指定群组 ID 的群组共享文件。注意上传的文件大小不能超过 10 MB。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 ID \\
+\hline
+string & {\em \$file\+Name} & 上传的文件路径 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 上传的文件信息或者错误 
+\end{DoxyReturn}

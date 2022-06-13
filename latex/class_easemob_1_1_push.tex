@@ -1,0 +1,105 @@
+\hypertarget{class_easemob_1_1_push}{}\doxysection{Easemob\textbackslash{}Push类 参考}
+\label{class_easemob_1_1_push}\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_push_af3d0d9d8dab54e19a4ef0d5bb73ade5d}{update\+User\+Nickname}} (\$username, \$nickname)
+\begin{DoxyCompactList}\small\item\em 设置推送昵称 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_push_a0d6234014e287ea0646f62c3a776a95f}{set\+Notification\+Display\+Style}} (\$username, \$notification\+\_\+display\+\_\+style=1)
+\begin{DoxyCompactList}\small\item\em 设置推送消息展示方式 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_push_a99d2d3916537243c15410c408e45b17d}{open\+Notification\+No\+Disturbing}} (\$username, \$start\+Time, \$end\+Time)
+\begin{DoxyCompactList}\small\item\em 设置推送免打扰 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_push_aab0036120d9e332074d19bb9efccd668}{close\+Notification\+No\+Disturbing}} (\$username)
+\begin{DoxyCompactList}\small\item\em 取消推送免打扰 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_easemob_1_1_push}{Push}} 用来管理用户推送（设置推送免打扰等） 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_push_aab0036120d9e332074d19bb9efccd668}\label{class_easemob_1_1_push_aab0036120d9e332074d19bb9efccd668}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!closeNotificationNoDisturbing@{closeNotificationNoDisturbing}}
+\index{closeNotificationNoDisturbing@{closeNotificationNoDisturbing}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{closeNotificationNoDisturbing()}{closeNotificationNoDisturbing()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::close\+Notification\+No\+Disturbing (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+取消推送免打扰 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_push_a99d2d3916537243c15410c408e45b17d}\label{class_easemob_1_1_push_a99d2d3916537243c15410c408e45b17d}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!openNotificationNoDisturbing@{openNotificationNoDisturbing}}
+\index{openNotificationNoDisturbing@{openNotificationNoDisturbing}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{openNotificationNoDisturbing()}{openNotificationNoDisturbing()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::open\+Notification\+No\+Disturbing (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$start\+Time,  }\item[{}]{\$end\+Time }\end{DoxyParamCaption})}
+
+
+
+设置推送免打扰 
+
+设置用户免打扰，在免打扰期间，用户将不会收到离线消息推送。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+int & {\em \$start\+Time} & 免打扰起始时间，单位是小时，例如 8 代表每日 8\+:00 开启免打扰 \\
+\hline
+int & {\em \$end\+Time} & 免打扰结束时间，单位是小时，例如 18 代表每日 18\+:00 关闭免打扰 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_push_a0d6234014e287ea0646f62c3a776a95f}\label{class_easemob_1_1_push_a0d6234014e287ea0646f62c3a776a95f}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!setNotificationDisplayStyle@{setNotificationDisplayStyle}}
+\index{setNotificationDisplayStyle@{setNotificationDisplayStyle}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{setNotificationDisplayStyle()}{setNotificationDisplayStyle()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::set\+Notification\+Display\+Style (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$notification\+\_\+display\+\_\+style = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+设置推送消息展示方式 
+
+设置推送消息至客户端的方式，修改后及时有效。服务端对应不同的设置，向用户发送不同展示方式的消息。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+int & {\em \$notification\+\_\+display\+\_\+style} & 消息提醒方式，0：仅通知；1：通知以及消息详情； \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_push_af3d0d9d8dab54e19a4ef0d5bb73ade5d}\label{class_easemob_1_1_push_af3d0d9d8dab54e19a4ef0d5bb73ade5d}} 
+\index{Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}!updateUserNickname@{updateUserNickname}}
+\index{updateUserNickname@{updateUserNickname}!Easemob\textbackslash{}Push@{Easemob\textbackslash{}Push}}
+\doxysubsubsection{\texorpdfstring{updateUserNickname()}{updateUserNickname()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Push\+::update\+User\+Nickname (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$nickname }\end{DoxyParamCaption})}
+
+
+
+设置推送昵称 
+
+设置用户的推送昵称，在离线推送时使用。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+string & {\em \$nickname} & 要设置的推送昵称 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}

@@ -1,0 +1,523 @@
+\hypertarget{class_easemob_1_1_room}{}\doxysection{Easemob\textbackslash{}Room类 参考}
+\label{class_easemob_1_1_room}\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_room_aa2e5d1b547dbd09f90dde19577a78ac8}{list\+Rooms}} (\$limit=10, \$cursor=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 获取 app 中所有的聊天室（分页） \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a585e759d7afadf7beda170d5d091236e}{list\+All\+Rooms}} ()
+\begin{DoxyCompactList}\small\item\em 获取 app 中所有的聊天室 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a9c9b7be0ef617bc52bfdec9a8de674a9}{list\+Rooms\+User\+Joined}} (\$username, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em 获取用户加入的聊天室（分页） \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_ad41668c4138baf89e7d8d7c37c50ce19}{list\+All\+Rooms\+User\+Joined}} (\$username)
+\begin{DoxyCompactList}\small\item\em 获取用户加入的聊天室 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a0482febd282a1824be69bfd723822416}{get\+Room}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em 获取聊天室详情 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_ab8ab117dcce3924f1045e34e206478e3}{create\+Room}} (\$name, \$description, \$owner, \$members=array(), \$maxusers=0)
+\begin{DoxyCompactList}\small\item\em 创建聊天室 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_aa39073c2d3ddf7213756ef3968ba3e4c}{update\+Room}} (\$data)
+\begin{DoxyCompactList}\small\item\em 修改聊天室信息 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_ab125483e5beed6b483ec2111a3f09dc6}{destroy\+Room}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em 删除聊天室 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_aeaf1b4881b3fae34f7e0d0ddfe5e4da6}{get\+Room\+Announcement}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em 获取聊天室公告 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_aff0bcb3520c787ca85f4a6f9c79f2da1}{update\+Room\+Announcement}} (\$room\+Id, \$announcement)
+\begin{DoxyCompactList}\small\item\em 修改聊天室公告 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a4d0ba0e1b2199cfbd97a504ab4165838}{list\+Room\+Members}} (\$room\+Id, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em 分页获取聊天室成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_ab1afc416a2c90793e1a465818fafadc1}{list\+Room\+Members\+All}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em 获取聊天室所有成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a7d9efb7cd89aa2d33a70a1e4b81aa5f9}{add\+Room\+Member}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 添加单个聊天室成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_aecc3ea0bab8bcec9e2c746042600e81a}{add\+Room\+Members}} (\$room\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em 批量添加聊天室成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_af58d604dc0656e1ae9bd6bb8658d5429}{remove\+Room\+Member}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 删除单个聊天室成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_ab8bb9e51b577144b32957c9a6f910880}{remove\+Room\+Members}} (\$room\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em 批量删除聊天室成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a974acc9f0b2dd5541e243082e8e3f327}{list\+Room\+Admins\+All}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em 获取聊天室管理员列表 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a97d854093b860a45cab91feec1275aff}{promote\+Room\+Admin}} (\$room\+Id, \$newadmin)
+\begin{DoxyCompactList}\small\item\em 添加聊天室管理员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a15b2bb4a009bd5ea9826d7532e091820}{demote\+Room\+Admin}} (\$room\+Id, \$oldadmin)
+\begin{DoxyCompactList}\small\item\em 移除聊天室管理员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a488102a7f614c747eed4e829e51c40a5}{list\+Room\+Super\+Admins}} (\$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em 分页获取聊天室超级管理员列表 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_a103ce32f693cbd34bf302aa5bbf8ad76}{promote\+Room\+Super\+Admin}} (\$superadmin)
+\begin{DoxyCompactList}\small\item\em 添加超级管理员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_room_ae4200fef8bc8779953076066cc178c0c}{demote\+Room\+Super\+Admin}} (\$superadmin)
+\begin{DoxyCompactList}\small\item\em 撤销超级管理员 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_easemob_1_1_room}{Room}} 用于管理聊天室 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_room_a7d9efb7cd89aa2d33a70a1e4b81aa5f9}\label{class_easemob_1_1_room_a7d9efb7cd89aa2d33a70a1e4b81aa5f9}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!addRoomMember@{addRoomMember}}
+\index{addRoomMember@{addRoomMember}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{addRoomMember()}{addRoomMember()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::add\+Room\+Member (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+添加单个聊天室成员 
+
+一次给聊天室添加一个成员，不能重复添加同一个成员。如果用户已经是聊天室成员，将添加失败，并返回错误。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+string & {\em \$username} & 环信用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_aecc3ea0bab8bcec9e2c746042600e81a}\label{class_easemob_1_1_room_aecc3ea0bab8bcec9e2c746042600e81a}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!addRoomMembers@{addRoomMembers}}
+\index{addRoomMembers@{addRoomMembers}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{addRoomMembers()}{addRoomMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::add\+Room\+Members (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+批量添加聊天室成员 
+
+向聊天室添加多位用户，一次性最多可添加 60 位用户。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+array & {\em \$usernames} & 环信用户 ID 数组 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_ab8ab117dcce3924f1045e34e206478e3}\label{class_easemob_1_1_room_ab8ab117dcce3924f1045e34e206478e3}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!createRoom@{createRoom}}
+\index{createRoom@{createRoom}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{createRoom()}{createRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::create\+Room (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$description,  }\item[{}]{\$owner,  }\item[{}]{\$members = {\ttfamily array()},  }\item[{}]{\$maxusers = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+创建聊天室 
+
+创建一个聊天室，并设置聊天室名称、聊天室描述、公开聊天室/私有聊天室属性、聊天室成员最大人数（包括管理员）、加入公开聊天室是否需要批准、管理员、以及聊天室成员。
+
+
+\begin{DoxyParams}[1]{参数}
+array & {\em \$name} & 聊天聊天室名称 \\
+\hline
+string & {\em \$description} & 聊天室描述 \\
+\hline
+string & {\em \$owner} & 聊天室的管理员 \\
+\hline
+array & {\em \$members} & 聊天室成员，此属性为可选的，但是如果加了此项，数组元素至少一个 \\
+\hline
+int & {\em \$maxusers} & 聊天室成员最大数（包括聊天室所有者），值为数值类型。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+string$\vert$array 创建的聊天室 id 或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a15b2bb4a009bd5ea9826d7532e091820}\label{class_easemob_1_1_room_a15b2bb4a009bd5ea9826d7532e091820}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!demoteRoomAdmin@{demoteRoomAdmin}}
+\index{demoteRoomAdmin@{demoteRoomAdmin}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{demoteRoomAdmin()}{demoteRoomAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::demote\+Room\+Admin (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$oldadmin }\end{DoxyParamCaption})}
+
+
+
+移除聊天室管理员 
+
+将用户的角色从聊天室管理员降为普通聊天室成员。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+string & {\em \$oldadmin} & 移除的管理员用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_ae4200fef8bc8779953076066cc178c0c}\label{class_easemob_1_1_room_ae4200fef8bc8779953076066cc178c0c}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!demoteRoomSuperAdmin@{demoteRoomSuperAdmin}}
+\index{demoteRoomSuperAdmin@{demoteRoomSuperAdmin}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{demoteRoomSuperAdmin()}{demoteRoomSuperAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::demote\+Room\+Super\+Admin (\begin{DoxyParamCaption}\item[{}]{\$superadmin }\end{DoxyParamCaption})}
+
+
+
+撤销超级管理员 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$superadmin} & 需要移除的 IM 用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误
+\end{DoxyReturn}
+撤销超级管理员
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$superadmin} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_ab125483e5beed6b483ec2111a3f09dc6}\label{class_easemob_1_1_room_ab125483e5beed6b483ec2111a3f09dc6}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!destroyRoom@{destroyRoom}}
+\index{destroyRoom@{destroyRoom}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{destroyRoom()}{destroyRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::destroy\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+删除聊天室 
+
+删除单个聊天室。如果被删除的聊天室不存在，会返回错误。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a0482febd282a1824be69bfd723822416}\label{class_easemob_1_1_room_a0482febd282a1824be69bfd723822416}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!getRoom@{getRoom}}
+\index{getRoom@{getRoom}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{getRoom()}{getRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::get\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+获取聊天室详情 
+
+可以获取一个或多个聊天室的详情。当获取多个聊天室的详情时，可以直接填写多个 chatroom\+\_\+id 并用 “,” 隔开，一次调用最多输入 100 个聊天室 ID，会返回所有存在的聊天室的详情，对于不存在的聊天室，response body 内返回 “chatroom id doesn’t exist”。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID，多个之间用 “,” 分隔 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 聊天室详情或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_aeaf1b4881b3fae34f7e0d0ddfe5e4da6}\label{class_easemob_1_1_room_aeaf1b4881b3fae34f7e0d0ddfe5e4da6}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!getRoomAnnouncement@{getRoomAnnouncement}}
+\index{getRoomAnnouncement@{getRoomAnnouncement}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{getRoomAnnouncement()}{getRoomAnnouncement()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::get\+Room\+Announcement (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+获取聊天室公告 
+
+获取指定聊天室 ID 的聊天室公告。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 公告信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a585e759d7afadf7beda170d5d091236e}\label{class_easemob_1_1_room_a585e759d7afadf7beda170d5d091236e}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listAllRooms@{listAllRooms}}
+\index{listAllRooms@{listAllRooms}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listAllRooms()}{listAllRooms()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+All\+Rooms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取 app 中所有的聊天室 
+
+\begin{DoxyReturn}{返回}
+array 聊天室列表信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_ad41668c4138baf89e7d8d7c37c50ce19}\label{class_easemob_1_1_room_ad41668c4138baf89e7d8d7c37c50ce19}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listAllRoomsUserJoined@{listAllRoomsUserJoined}}
+\index{listAllRoomsUserJoined@{listAllRoomsUserJoined}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listAllRoomsUserJoined()}{listAllRoomsUserJoined()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+All\+Rooms\+User\+Joined (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+获取用户加入的聊天室 
+
+根据用户名称获取该用户加入的全部聊天室
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 用户加入的聊天室列表或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a974acc9f0b2dd5541e243082e8e3f327}\label{class_easemob_1_1_room_a974acc9f0b2dd5541e243082e8e3f327}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listRoomAdminsAll@{listRoomAdminsAll}}
+\index{listRoomAdminsAll@{listRoomAdminsAll}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listRoomAdminsAll()}{listRoomAdminsAll()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+Room\+Admins\+All (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+获取聊天室管理员列表 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 聊天室管理员列表信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a4d0ba0e1b2199cfbd97a504ab4165838}\label{class_easemob_1_1_room_a4d0ba0e1b2199cfbd97a504ab4165838}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listRoomMembers@{listRoomMembers}}
+\index{listRoomMembers@{listRoomMembers}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listRoomMembers()}{listRoomMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+Room\+Members (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+分页获取聊天室成员 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+int & {\em \$page\+Size} & 每页获取的群组数量，默认取 10 条 \\
+\hline
+int & {\em \$page\+Num} & 当前页码，默认取第 1 页 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 聊天室成员信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_ab1afc416a2c90793e1a465818fafadc1}\label{class_easemob_1_1_room_ab1afc416a2c90793e1a465818fafadc1}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listRoomMembersAll@{listRoomMembersAll}}
+\index{listRoomMembersAll@{listRoomMembersAll}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listRoomMembersAll()}{listRoomMembersAll()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+Room\+Members\+All (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+获取聊天室所有成员 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 聊天室成员信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_aa2e5d1b547dbd09f90dde19577a78ac8}\label{class_easemob_1_1_room_aa2e5d1b547dbd09f90dde19577a78ac8}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listRooms@{listRooms}}
+\index{listRooms@{listRooms}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listRooms()}{listRooms()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+Rooms (\begin{DoxyParamCaption}\item[{}]{\$limit = {\ttfamily 10},  }\item[{}]{\$cursor = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+获取 app 中所有的聊天室（分页） 
+
+
+\begin{DoxyParams}[1]{参数}
+int & {\em \$limit} & 每页显示的数量，默认取 10 条 \\
+\hline
+string & {\em \$cursor} & 分页游标 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 聊天室列表信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a488102a7f614c747eed4e829e51c40a5}\label{class_easemob_1_1_room_a488102a7f614c747eed4e829e51c40a5}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listRoomSuperAdmins@{listRoomSuperAdmins}}
+\index{listRoomSuperAdmins@{listRoomSuperAdmins}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listRoomSuperAdmins()}{listRoomSuperAdmins()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+Room\+Super\+Admins (\begin{DoxyParamCaption}\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+分页获取聊天室超级管理员列表 
+
+
+\begin{DoxyParams}[1]{参数}
+int & {\em \$page\+Size} & 每页获取的数量，默认取 10 条 \\
+\hline
+int & {\em \$page\+Num} & 当前页码，默认取第 1 页 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 超级管理员列表信息或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a9c9b7be0ef617bc52bfdec9a8de674a9}\label{class_easemob_1_1_room_a9c9b7be0ef617bc52bfdec9a8de674a9}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!listRoomsUserJoined@{listRoomsUserJoined}}
+\index{listRoomsUserJoined@{listRoomsUserJoined}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{listRoomsUserJoined()}{listRoomsUserJoined()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::list\+Rooms\+User\+Joined (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+获取用户加入的聊天室（分页） 
+
+根据用户名称获取该用户加入的全部聊天室
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+int & {\em \$page\+Size} & 每页获取的群组数量，默认取 10 条 \\
+\hline
+int & {\em \$page\+Num} & 当前页码，默认取第 1 页 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 用户加入的聊天室列表或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a97d854093b860a45cab91feec1275aff}\label{class_easemob_1_1_room_a97d854093b860a45cab91feec1275aff}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!promoteRoomAdmin@{promoteRoomAdmin}}
+\index{promoteRoomAdmin@{promoteRoomAdmin}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{promoteRoomAdmin()}{promoteRoomAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::promote\+Room\+Admin (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$newadmin }\end{DoxyParamCaption})}
+
+
+
+添加聊天室管理员 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+string & {\em \$newadmin} & 添加的新管理员用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_a103ce32f693cbd34bf302aa5bbf8ad76}\label{class_easemob_1_1_room_a103ce32f693cbd34bf302aa5bbf8ad76}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!promoteRoomSuperAdmin@{promoteRoomSuperAdmin}}
+\index{promoteRoomSuperAdmin@{promoteRoomSuperAdmin}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{promoteRoomSuperAdmin()}{promoteRoomSuperAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::promote\+Room\+Super\+Admin (\begin{DoxyParamCaption}\item[{}]{\$superadmin }\end{DoxyParamCaption})}
+
+
+
+添加超级管理员 
+
+给用户添加聊天室超级管理员身份，一次只能添加一个。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$superadmin} & 添加的用户名称 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_af58d604dc0656e1ae9bd6bb8658d5429}\label{class_easemob_1_1_room_af58d604dc0656e1ae9bd6bb8658d5429}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!removeRoomMember@{removeRoomMember}}
+\index{removeRoomMember@{removeRoomMember}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{removeRoomMember()}{removeRoomMember()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::remove\+Room\+Member (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+删除单个聊天室成员 
+
+从聊天室删除一个成员。如果被删除用户不在聊天室中，或者聊天室不存在，将返回错误。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+string & {\em \$username} & 环信用户 ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_ab8bb9e51b577144b32957c9a6f910880}\label{class_easemob_1_1_room_ab8bb9e51b577144b32957c9a6f910880}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!removeRoomMembers@{removeRoomMembers}}
+\index{removeRoomMembers@{removeRoomMembers}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{removeRoomMembers()}{removeRoomMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::remove\+Room\+Members (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+批量删除聊天室成员 
+
+从聊天室删除多个成员。如果被删除用户不在聊天室中，或者聊天室不存在，将返回错误。
+
+一次最多传 100 个用户 ID。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+array & {\em \$usernames} & 环信用户 ID 数组 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_aa39073c2d3ddf7213756ef3968ba3e4c}\label{class_easemob_1_1_room_aa39073c2d3ddf7213756ef3968ba3e4c}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!updateRoom@{updateRoom}}
+\index{updateRoom@{updateRoom}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{updateRoom()}{updateRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::update\+Room (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+
+
+修改聊天室信息 
+
+修改成功的数据行会返回 true，失败为 false。请求 body 只接收 name、description、maxusers 三个属性。传其他字段，或者不能修改的字段会抛异常。
+
+
+\begin{DoxyParams}[1]{参数}
+array & {\em \$data} & 聊天室信息
+\begin{DoxyItemize}
+\item {\ttfamily name} string 类型，聊天室名称，修改时值不能包含斜杠(“/”)。
+\item {\ttfamily description} string 类型，聊天室描述，修改时值不能包含斜杠(“/”)。
+\item {\ttfamily maxusers} int 类型，聊天室最大成员数（包括聊天室所有者），值为数值类型。 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_room_aff0bcb3520c787ca85f4a6f9c79f2da1}\label{class_easemob_1_1_room_aff0bcb3520c787ca85f4a6f9c79f2da1}} 
+\index{Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}!updateRoomAnnouncement@{updateRoomAnnouncement}}
+\index{updateRoomAnnouncement@{updateRoomAnnouncement}!Easemob\textbackslash{}Room@{Easemob\textbackslash{}Room}}
+\doxysubsubsection{\texorpdfstring{updateRoomAnnouncement()}{updateRoomAnnouncement()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Room\+::update\+Room\+Announcement (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$announcement }\end{DoxyParamCaption})}
+
+
+
+修改聊天室公告 
+
+修改指定聊天室 ID 的聊天室公告。聊天室公告内容不能超过 512 个字符。 
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 ID \\
+\hline
+string & {\em \$announcement} & 聊天室公告内容 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}

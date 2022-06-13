@@ -1,0 +1,69 @@
+\hypertarget{class_easemob_1_1_auth}{}\doxysection{Easemob\textbackslash{}Auth Class Reference}
+\label{class_easemob_1_1_auth}\index{Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_auth_a9d79ec754e40d3f9a6f9e48f72ff4d6f}{\+\_\+\+\_\+construct}} ( \$app\+Key, \$client\+Id\+Or\+App\+ID, \$client\+Secret\+Or\+App\+Certificate, \$expire\+Time\+In\+Seconds=2592000, \$is\+Agora=false, \$uuid=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 构造方法 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_auth_af095cc349704cd8bf0ae163d2ca99a9b}{get\+User\+Token}} (\$username, \$password=null, \$expire\+In\+Seconds=3600, \$configuration=null)
+\begin{DoxyCompactList}\small\item\em Get user token. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+授权类 @final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_auth_a9d79ec754e40d3f9a6f9e48f72ff4d6f}\label{class_easemob_1_1_auth_a9d79ec754e40d3f9a6f9e48f72ff4d6f}} 
+\index{Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Auth\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$app\+Key,  }\item[{}]{\$client\+Id\+Or\+App\+ID,  }\item[{}]{\$client\+Secret\+Or\+App\+Certificate,  }\item[{}]{\$expire\+Time\+In\+Seconds = {\ttfamily 2592000},  }\item[{}]{\$is\+Agora = {\ttfamily false},  }\item[{}]{\$uuid = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+构造方法 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$app\+Key} & The unique identification of app. The rule is \$\{org\+\_\+name\}\#\$\{app\+\_\+name\} \\
+\hline
+string & {\em \$client\+Id\+Or\+App\+ID} & easemob client\+\_\+id or Agora App ID，\+Determined by \$isagora \\
+\hline
+string & {\em \$client\+Secret\+Or\+App\+Certificate} & easemob client\+\_\+secret or Agora App\+Certificate，\+Determined by \$isagora \\
+\hline
+int & {\em \$expire\+Time\+In\+Seconds} & Token validity, in seconds \\
+\hline
+mixed & {\em \$proxy} & Agent information \\
+\hline
+boolean & {\em \$is\+Agora} & Whether to use Agora token initialization \\
+\hline
+string & {\em \$uuid} & easemob username \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_auth_af095cc349704cd8bf0ae163d2ca99a9b}\label{class_easemob_1_1_auth_af095cc349704cd8bf0ae163d2ca99a9b}} 
+\index{Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}!getUserToken@{getUserToken}}
+\index{getUserToken@{getUserToken}!Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{getUserToken()}{getUserToken()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Auth\+::get\+User\+Token (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password = {\ttfamily null},  }\item[{}]{\$expire\+In\+Seconds = {\ttfamily 3600},  }\item[{}]{\$configuration = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get user token. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & easemob user name or uuid \\
+\hline
+string & {\em \$password} & easemob user login password, obtain easemob usertoken when passing, otherwise obtain Agora usertoken \\
+\hline
+int & {\em \$expire\+In\+Seconds} & Expiration time of token, unit\+: S \\
+\hline
+array & {\em \$configuration} & privileges \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_user}{User}} token information or error 
+\end{DoxyReturn}

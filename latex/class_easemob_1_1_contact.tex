@@ -1,0 +1,79 @@
+\hypertarget{class_easemob_1_1_contact}{}\doxysection{Easemob\textbackslash{}Contact类 参考}
+\label{class_easemob_1_1_contact}\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_contact_ab3ae56426dd04e1b0e24d876ef443e8c}{add}} (\$username, \$contact)
+\begin{DoxyCompactList}\small\item\em 添加好友 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_contact_aa52dca8464e0aa5c14a4841bf3dce25b}{remove}} (\$username, \$contact)
+\begin{DoxyCompactList}\small\item\em 移除好友 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_contact_a661e5c33af1cb53fc5d6f5a8296130e0}{get}} (\$username)
+\begin{DoxyCompactList}\small\item\em 获取好友列表 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_easemob_1_1_contact}{Contact}} 用来管理联系人（添加好友等） 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_contact_ab3ae56426dd04e1b0e24d876ef443e8c}\label{class_easemob_1_1_contact_ab3ae56426dd04e1b0e24d876ef443e8c}} 
+\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}!add@{add}}
+\index{add@{add}!Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Contact\+::add (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$contact }\end{DoxyParamCaption})}
+
+
+
+添加好友 
+
+好友必须是和自己在一个 App Key 下的用户。免费版 App Key 下的每个用户的好友数量上限为 1000，不同版本 App Key 上限不同，具体可参考：\href{https://www.easemob.com/pricing/im}{\texttt{ 版本功能介绍}}。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 要添加好友的用户名 \\
+\hline
+string & {\em \$contact} & 好友用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_contact_a661e5c33af1cb53fc5d6f5a8296130e0}\label{class_easemob_1_1_contact_a661e5c33af1cb53fc5d6f5a8296130e0}} 
+\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}!get@{get}}
+\index{get@{get}!Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Contact\+::get (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+获取好友列表 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 要获取好友列表的用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 好友列表或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_contact_aa52dca8464e0aa5c14a4841bf3dce25b}\label{class_easemob_1_1_contact_aa52dca8464e0aa5c14a4841bf3dce25b}} 
+\index{Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}!remove@{remove}}
+\index{remove@{remove}!Easemob\textbackslash{}Contact@{Easemob\textbackslash{}Contact}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Contact\+::remove (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$contact }\end{DoxyParamCaption})}
+
+
+
+移除好友 
+
+从用户的好友列表中移除一个用户。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 要移除好友的用户名 \\
+\hline
+string & {\em \$contact} & 好友用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}

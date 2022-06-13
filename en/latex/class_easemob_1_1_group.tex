@@ -1,0 +1,608 @@
+\hypertarget{class_easemob_1_1_group}{}\doxysection{Easemob\textbackslash{}Group Class Reference}
+\label{class_easemob_1_1_group}\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ac52a7ebd7adf74b67a8058a01f73943f}{list\+Groups}} (\$limit=10, \$cursor=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Get all groups in the app (pagable) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_afe44fb1a719906d4600f931b405d06ac}{list\+All\+Groups}} ()
+\begin{DoxyCompactList}\small\item\em Get all groups in the app. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ad626d5d224560321978045ae8aaa6c25}{list\+Groups\+User\+Joined}} (\$username, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em Paged access to all groups joined by a single user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_aa497e2be4f06aff856f71c5394846ba2}{list\+All\+Groups\+User\+Joined}} (\$username)
+\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a78634b2f87ee48658883c6ed36b2b583}{get\+Group}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Get group details. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_aaf21c5e19367e36653de453f54c09743}{create\+Public\+Group}} (\$owner, \$groupname, \$desc, \$members=array(), \$maxusers=200, \$members\+\_\+only=true, \$custom=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Create public group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a54e2ed909378770b226baf3cff9ca0b0}{create\+Private\+Group}} (\$owner, \$groupname, \$desc, \$members=array(), \$maxusers=200, \$allowinvites=false, \$custom=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Create private group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a94c60347a8898fdb1dbacfe0a4f40741}{update\+Group}} (\$data)
+\begin{DoxyCompactList}\small\item\em Modify group information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ab89f3b8d5a9cdae686b12fbb11cc8d69}{destroy\+Group}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Delete \mbox{\hyperlink{class_easemob_1_1_group}{Group}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ae1cc49ed0d8726ab343f752d271c6cc0}{get\+Group\+Announcement}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Get group announcements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ad693ff8ad924f42e58d2c223fd8be0aa}{update\+Group\+Announcement}} (\$group\+Id, \$announcement)
+\begin{DoxyCompactList}\small\item\em Modify group announcement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}{get\+Group\+Share\+Files}} (\$group\+Id, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em Get group shared files. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a16421fb6a61cec69ad988b1fdec49a4f}{upload\+Group\+Share\+File}} (\$group\+Id, \$file\+Name)
+\begin{DoxyCompactList}\small\item\em Upload group shared files. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}{download\+Group\+Share\+File}} (\$file\+Name, \$group\+Id, \$file\+Id)
+\begin{DoxyCompactList}\small\item\em Download group shared files. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}{delete\+Group\+Share\+File}} (\$group\+Id, \$file\+Id)
+\begin{DoxyCompactList}\small\item\em Delete group shared files. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a60c1d8fe559e412f23c0164ee76662b8}{list\+Group\+Members}} (\$group\+Id, \$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em Paging get group members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a7c1b2d65ef35363f4c63e64036fa97ee}{list\+All\+Group\+Members}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Get all members of the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a26b0a3c8a50ba345a8117c0bea6f786b}{add\+Group\+Member}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Add individual group members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a430e9ba0860f7002c99616c48fd060dd}{add\+Group\+Members}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch add group members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a914278edfb2e024a896be5de2ce04358}{remove\+Group\+Member}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Remove individual group members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_ac005274b3290e5dc8a5efd025e1f4d0a}{remove\+Group\+Members}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch remove group members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a4d30938699ed542ce78192372bc4be35}{list\+Group\+Admins}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Get the list of group administrators. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a7e02770021bfa574eef46ad5bc1d4745}{add\+Group\+Admin}} (\$group\+Id, \$newadmin)
+\begin{DoxyCompactList}\small\item\em Add group administrator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a16f45ec78467c625008a7744da49989a}{remove\+Group\+Admin}} (\$group\+Id, \$oldadmin)
+\begin{DoxyCompactList}\small\item\em Remove group administrator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_group_a851fd75be9620acc70c5c440bf3bb1f0}{update\+Group\+Owner}} (\$group\+Id, \$newowner)
+\begin{DoxyCompactList}\small\item\em Transfer group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_group}{Group}}} is used to manage group 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_group_a7e02770021bfa574eef46ad5bc1d4745}\label{class_easemob_1_1_group_a7e02770021bfa574eef46ad5bc1d4745}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!addGroupAdmin@{addGroupAdmin}}
+\index{addGroupAdmin@{addGroupAdmin}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{addGroupAdmin()}{addGroupAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::add\+Group\+Admin (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$newadmin }\end{DoxyParamCaption})}
+
+
+
+Add group administrator. 
+
+Promote the role permission of a group member to group administrator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$newadmin} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a26b0a3c8a50ba345a8117c0bea6f786b}\label{class_easemob_1_1_group_a26b0a3c8a50ba345a8117c0bea6f786b}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!addGroupMember@{addGroupMember}}
+\index{addGroupMember@{addGroupMember}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{addGroupMember()}{addGroupMember()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::add\+Group\+Member (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Add individual group members. 
+
+Add one member to the group at a time. You cannot add the same member repeatedly. If the user is already a member of the group, the addition fails with an error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a430e9ba0860f7002c99616c48fd060dd}\label{class_easemob_1_1_group_a430e9ba0860f7002c99616c48fd060dd}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!addGroupMembers@{addGroupMembers}}
+\index{addGroupMembers@{addGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{addGroupMembers()}{addGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::add\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch add group members. 
+
+Add multiple members to the group. You can add up to 60 members at a time. If all users are already members of the group, the addition fails with an error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a54e2ed909378770b226baf3cff9ca0b0}\label{class_easemob_1_1_group_a54e2ed909378770b226baf3cff9ca0b0}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!createPrivateGroup@{createPrivateGroup}}
+\index{createPrivateGroup@{createPrivateGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{createPrivateGroup()}{createPrivateGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::create\+Private\+Group (\begin{DoxyParamCaption}\item[{}]{\$owner,  }\item[{}]{\$groupname,  }\item[{}]{\$desc,  }\item[{}]{\$members = {\ttfamily array()},  }\item[{}]{\$maxusers = {\ttfamily 200},  }\item[{}]{\$allowinvites = {\ttfamily false},  }\item[{}]{\$custom = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Create private group. 
+
+Create a private group, and set the group owner, group name, group description, group members, maximum number of group members (including group owner), whether to allow group members to invite others to join the group, and group extension information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$owner} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name of the group administrator \\
+\hline
+string & {\em \$groupname} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} name, with a maximum length of 128 characters. \\
+\hline
+string & {\em \$desc} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} description, with a maximum length of 512 characters. \\
+\hline
+array & {\em \$members} & This attribute is not required for group members, but if this item is added, there must be at least one array element, not more than 100. (Note\+: group leader user1 does not need to be written into members) \\
+\hline
+int & {\em \$maxusers} & The maximum number of group members (including group owners), the value is numerical type, the default value is 200, please refer to the specific upper limit \href{https://console.easemob.com/user/login}{\texttt{ easemob console}}。 \\
+\hline
+boolean & {\em \$allowinvites} & Allow group members to invite others to join the group\+: true\+: allow group members to invite people to join the group; False\+: only the group leader or administrator can add people to the group. \\
+\hline
+string & {\em \$custom} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} extension information, for example, you can add business-\/related tags to the group, which should not exceed 1024 characters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_aaf21c5e19367e36653de453f54c09743}\label{class_easemob_1_1_group_aaf21c5e19367e36653de453f54c09743}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!createPublicGroup@{createPublicGroup}}
+\index{createPublicGroup@{createPublicGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{createPublicGroup()}{createPublicGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::create\+Public\+Group (\begin{DoxyParamCaption}\item[{}]{\$owner,  }\item[{}]{\$groupname,  }\item[{}]{\$desc,  }\item[{}]{\$members = {\ttfamily array()},  }\item[{}]{\$maxusers = {\ttfamily 200},  }\item[{}]{\$members\+\_\+only = {\ttfamily true},  }\item[{}]{\$custom = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Create public group. 
+
+Create a public group, and set the group owner, group name, group description, group members, the maximum number of group members (including group owners), whether to join the group requires approval, and group extension information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$owner} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name of the group administrator \\
+\hline
+string & {\em \$groupname} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} name, with a maximum length of 128 characters. \\
+\hline
+string & {\em \$desc} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} description, with a maximum length of 512 characters. \\
+\hline
+array & {\em \$members} & This attribute is not required for group members, but if this item is added, there must be at least one array element, not more than 100. (Note\+: group leader user1 does not need to be written into members) \\
+\hline
+int & {\em \$maxusers} & The maximum number of group members (including group owners), the value is numerical type, the default value is 200, please refer to the specific upper limit \href{https://console.easemob.com/user/login}{\texttt{ easemob console}}。 \\
+\hline
+boolean & {\em \$members\+\_\+only} & Whether the user\textquotesingle{}s application to join the group needs the approval of the group owner or group administrator. The default is false. True\+: Yes; False\+: No. \\
+\hline
+string & {\em \$custom} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} extension information, for example, you can add business-\/related tags to the group, which should not exceed 1024 characters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}\label{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!deleteGroupShareFile@{deleteGroupShareFile}}
+\index{deleteGroupShareFile@{deleteGroupShareFile}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{deleteGroupShareFile()}{deleteGroupShareFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::delete\+Group\+Share\+File (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$file\+Id }\end{DoxyParamCaption})}
+
+
+
+Delete group shared files. 
+
+According to the specified group ID and file\+\_\+id delete group shared file, file\+\_\+id is obtained through \mbox{\hyperlink{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}{get\+Group\+Share\+Files(\$group\+Id, \$page\+Size = 10, \$page\+Num = 1)}}。
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$file\+Id} & file\+\_\+id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ab89f3b8d5a9cdae686b12fbb11cc8d69}\label{class_easemob_1_1_group_ab89f3b8d5a9cdae686b12fbb11cc8d69}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!destroyGroup@{destroyGroup}}
+\index{destroyGroup@{destroyGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{destroyGroup()}{destroyGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::destroy\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Delete \mbox{\hyperlink{class_easemob_1_1_group}{Group}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}\label{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!downloadGroupShareFile@{downloadGroupShareFile}}
+\index{downloadGroupShareFile@{downloadGroupShareFile}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{downloadGroupShareFile()}{downloadGroupShareFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::download\+Group\+Share\+File (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$group\+Id,  }\item[{}]{\$file\+Id }\end{DoxyParamCaption})}
+
+
+
+Download group shared files. 
+
+According to the specified group ID and file\+\_\+id download group shared file, file\+\_\+id is obtained through \mbox{\hyperlink{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}{get\+Group\+Share\+Files(\$group\+Id, \$page\+Size = 10, \$page\+Num = 1)}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & File path to download \\
+\hline
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$file\+Id} & file\+\_\+id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$array File size or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a78634b2f87ee48658883c6ed36b2b583}\label{class_easemob_1_1_group_a78634b2f87ee48658883c6ed36b2b583}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!getGroup@{getGroup}}
+\index{getGroup@{getGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{getGroup()}{getGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::get\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Get group details. 
+
+You can get the details of one or more groups. When the details of multiple groups are obtained, the details of all existing groups are returned; For group ID \textquotesingle{}exist\textquotesingle{}, return \textquotesingle{}EST\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID, which can be separated by commas, and multiple group IDs can be passed at the same time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ae1cc49ed0d8726ab343f752d271c6cc0}\label{class_easemob_1_1_group_ae1cc49ed0d8726ab343f752d271c6cc0}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!getGroupAnnouncement@{getGroupAnnouncement}}
+\index{getGroupAnnouncement@{getGroupAnnouncement}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{getGroupAnnouncement()}{getGroupAnnouncement()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::get\+Group\+Announcement (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Get group announcements. 
+
+Gets the group announcement of the specified group ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Announcement information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}\label{class_easemob_1_1_group_abdb32a328eb672ab6f666a7239c42b66}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!getGroupShareFiles@{getGroupShareFiles}}
+\index{getGroupShareFiles@{getGroupShareFiles}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{getGroupShareFiles()}{getGroupShareFiles()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::get\+Group\+Share\+Files (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Get group shared files. 
+
+Get the group shared file of the specified group ID by paging, and then according to the file returned in the response\+\_\+ id，file\+\_\+ ID is the unique identification of the group shared file, call \mbox{\hyperlink{class_easemob_1_1_group_a8414c348d7387fd6c3722720792ccb7b}{download\+Group\+Share\+File(\$file\+Name, \$group\+Id, \$file\+Id)}} download files, or call \mbox{\hyperlink{class_easemob_1_1_group_ab8c1c7b8f7bec116600ee95164b3a496}{delete\+Group\+Share\+File(\$group\+Id, \$file\+Id)}} delete file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+int & {\em \$page\+Size} & Number of groups obtained per page. This parameter is only applicable to the paging get method. 10 by default. \\
+\hline
+int & {\em \$page\+Num} & Current page number. This parameter is only applicable to the paging get method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} file information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a7c1b2d65ef35363f4c63e64036fa97ee}\label{class_easemob_1_1_group_a7c1b2d65ef35363f4c63e64036fa97ee}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listAllGroupMembers@{listAllGroupMembers}}
+\index{listAllGroupMembers@{listAllGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listAllGroupMembers()}{listAllGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+All\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Get all members of the group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} member information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_afe44fb1a719906d4600f931b405d06ac}\label{class_easemob_1_1_group_afe44fb1a719906d4600f931b405d06ac}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listAllGroups@{listAllGroups}}
+\index{listAllGroups@{listAllGroups}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listAllGroups()}{listAllGroups()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+All\+Groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all groups in the app. 
+
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} list information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_aa497e2be4f06aff856f71c5394846ba2}\label{class_easemob_1_1_group_aa497e2be4f06aff856f71c5394846ba2}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listAllGroupsUserJoined@{listAllGroupsUserJoined}}
+\index{listAllGroupsUserJoined@{listAllGroupsUserJoined}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listAllGroupsUserJoined()}{listAllGroupsUserJoined()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+All\+Groups\+User\+Joined (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+brief Get all groups joined by a single user
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a4d30938699ed542ce78192372bc4be35}\label{class_easemob_1_1_group_a4d30938699ed542ce78192372bc4be35}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroupAdmins@{listGroupAdmins}}
+\index{listGroupAdmins@{listGroupAdmins}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroupAdmins()}{listGroupAdmins()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Group\+Admins (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Get the list of group administrators. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} administrator information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a60c1d8fe559e412f23c0164ee76662b8}\label{class_easemob_1_1_group_a60c1d8fe559e412f23c0164ee76662b8}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroupMembers@{listGroupMembers}}
+\index{listGroupMembers@{listGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroupMembers()}{listGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Paging get group members. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+int & {\em \$page\+Size} & Number of members per page. The default value is 10 and the maximum value is 100. \\
+\hline
+int & {\em \$page\+Num} & Current page number. The default value is 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} member information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ac52a7ebd7adf74b67a8058a01f73943f}\label{class_easemob_1_1_group_ac52a7ebd7adf74b67a8058a01f73943f}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroups@{listGroups}}
+\index{listGroups@{listGroups}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroups()}{listGroups()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Groups (\begin{DoxyParamCaption}\item[{}]{\$limit = {\ttfamily 10},  }\item[{}]{\$cursor = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Get all groups in the app (pagable) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & Number of groups obtained at one time, get 10 by default. \\
+\hline
+string & {\em \$cursor} & Paging is used. After the cursor is passed in, it will be queried from the beginning of the cursor, which is similar to the function of 1 in database limit 1,5. It can be understood as page number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} list information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ad626d5d224560321978045ae8aaa6c25}\label{class_easemob_1_1_group_ad626d5d224560321978045ae8aaa6c25}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!listGroupsUserJoined@{listGroupsUserJoined}}
+\index{listGroupsUserJoined@{listGroupsUserJoined}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{listGroupsUserJoined()}{listGroupsUserJoined()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::list\+Groups\+User\+Joined (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Paged access to all groups joined by a single user. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+int & {\em \$page\+Size} & Number of groups obtained per page. This parameter is only applicable to the paging get method. 10 by default. \\
+\hline
+int & {\em \$page\+Num} & Current page number. This parameter is only applicable to the paging get method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a16f45ec78467c625008a7744da49989a}\label{class_easemob_1_1_group_a16f45ec78467c625008a7744da49989a}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!removeGroupAdmin@{removeGroupAdmin}}
+\index{removeGroupAdmin@{removeGroupAdmin}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{removeGroupAdmin()}{removeGroupAdmin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::remove\+Group\+Admin (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$oldadmin }\end{DoxyParamCaption})}
+
+
+
+Remove group administrator. 
+
+Reduce the user\textquotesingle{}s role from group administrator to ordinary member of the group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$oldadmin} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a914278edfb2e024a896be5de2ce04358}\label{class_easemob_1_1_group_a914278edfb2e024a896be5de2ce04358}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!removeGroupMember@{removeGroupMember}}
+\index{removeGroupMember@{removeGroupMember}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{removeGroupMember()}{removeGroupMember()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::remove\+Group\+Member (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Remove individual group members. 
+
+Remove a member from the group. If the removed user is not a member of the group, the removal fails with an error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ac005274b3290e5dc8a5efd025e1f4d0a}\label{class_easemob_1_1_group_ac005274b3290e5dc8a5efd025e1f4d0a}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!removeGroupMembers@{removeGroupMembers}}
+\index{removeGroupMembers@{removeGroupMembers}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{removeGroupMembers()}{removeGroupMembers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::remove\+Group\+Members (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch remove group members. 
+
+Remove group members and separate user names with English commas. It is recommended to remove up to 60 group members at a time. If all the removed users are not members of the group, the removal fails with an error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+array & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a94c60347a8898fdb1dbacfe0a4f40741}\label{class_easemob_1_1_group_a94c60347a8898fdb1dbacfe0a4f40741}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!updateGroup@{updateGroup}}
+\index{updateGroup@{updateGroup}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{updateGroup()}{updateGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::update\+Group (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+
+
+Modify group information. 
+
+The modified data row will return true, and the failure will be false. The request body only receives six attributes\+: groupname, description, maxusers, members only, allowinvites and custom. If it passes non-\/existent fields or fields that cannot be modified, exceptions will be thrown.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} information
+\begin{DoxyItemize}
+\item {\ttfamily groupname} string type. \mbox{\hyperlink{class_easemob_1_1_group}{Group}} name. When modified, the value cannot contain slash (\char`\"{}/\char`\"{}), and the maximum length is 128 characters.
+\item {\ttfamily description} string type. \mbox{\hyperlink{class_easemob_1_1_group}{Group}} description. When modifying, the value cannot contain slash (\char`\"{}/\char`\"{}), and the maximum length is 512 characters.
+\item {\ttfamily maxusers} int type. The maximum number of group members (including group owners) is the numerical value type.
+\item {\ttfamily membersonly} string type. Whether to join the group requires the approval of the group owner or group administrator\+: true\+: Yes; False\+: No.
+\item {\ttfamily allowinvites} string type. Allow group members to invite others to join the group\+: true\+: allow group members to invite people to join the group; False\+: only the group leader can add people to the group.
+\item {\ttfamily custom} string type. \mbox{\hyperlink{class_easemob_1_1_group}{Group}} extension information, for example, you can add business-\/related tags to the group, which should not exceed 1024 characters. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_ad693ff8ad924f42e58d2c223fd8be0aa}\label{class_easemob_1_1_group_ad693ff8ad924f42e58d2c223fd8be0aa}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!updateGroupAnnouncement@{updateGroupAnnouncement}}
+\index{updateGroupAnnouncement@{updateGroupAnnouncement}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{updateGroupAnnouncement()}{updateGroupAnnouncement()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::update\+Group\+Announcement (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$announcement }\end{DoxyParamCaption})}
+
+
+
+Modify group announcement. 
+
+Modify the group announcement of the specified group ID. note that the content of the group announcement cannot exceed 512 characters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$announcement} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} announcement content \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a851fd75be9620acc70c5c440bf3bb1f0}\label{class_easemob_1_1_group_a851fd75be9620acc70c5c440bf3bb1f0}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!updateGroupOwner@{updateGroupOwner}}
+\index{updateGroupOwner@{updateGroupOwner}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{updateGroupOwner()}{updateGroupOwner()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::update\+Group\+Owner (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$newowner }\end{DoxyParamCaption})}
+
+
+
+Transfer group. 
+
+Modify the group owner to other members in the same group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$newowner} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_group_a16421fb6a61cec69ad988b1fdec49a4f}\label{class_easemob_1_1_group_a16421fb6a61cec69ad988b1fdec49a4f}} 
+\index{Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}!uploadGroupShareFile@{uploadGroupShareFile}}
+\index{uploadGroupShareFile@{uploadGroupShareFile}!Easemob\textbackslash{}Group@{Easemob\textbackslash{}Group}}
+\doxysubsubsection{\texorpdfstring{uploadGroupShareFile()}{uploadGroupShareFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Group\+::upload\+Group\+Share\+File (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$file\+Name }\end{DoxyParamCaption})}
+
+
+
+Upload group shared files. 
+
+Upload the group shared file with the specified group ID. Note that the uploaded file size cannot exceed 10 Mb.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$file\+Name} & Uploaded file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Uploaded file information or error 
+\end{DoxyReturn}

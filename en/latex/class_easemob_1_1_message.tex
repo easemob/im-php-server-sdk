@@ -1,0 +1,396 @@
+\hypertarget{class_easemob_1_1_message}{}\doxysection{Easemob\textbackslash{}Message Class Reference}
+\label{class_easemob_1_1_message}\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a977a164aafd5f0702825c032f749e126}{text}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send text message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a4b6f402d9f9303e61de187a9f7fdc2dc}{image}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send picture message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a7bfa86af9c8f4ad8fa2c0073680306ed}{audio}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send voice message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a4f98f2385555326c6b2043477ca9cfd5}{video}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send video message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a6107b952bce223b8638b5454c6010ed1}{file}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send file message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_afbf53a1a85ecdd92b407338470b3bf41}{location}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send location message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a3e2ecf4983a71b61f5f92249d34d5d76}{cmd}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send transparent message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a9f40ca25edae812df13be0c546dab005}{custom}} (\$target\+\_\+type, \$target, \$message, \$from=\textquotesingle{}admin\textquotesingle{}, \$sync\+\_\+device=false, \$is\+Online=false)
+\begin{DoxyCompactList}\small\item\em Send custom message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a333fc0fb19e16e61dd083b7fcdb4c2ad}{count\+Missed\+Messages}} (\$username)
+\begin{DoxyCompactList}\small\item\em Get the number of user offline messages. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a98a2a3439e7ad7c40e4488c87e4557c0}{is\+Message\+Delivered\+To\+User}} (\$username, \$msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get the status of an offline message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a39c471ba3cf56b3b390a77197ba64ef5}{get\+History\+As\+Uri}} (\$date\+Time)
+\begin{DoxyCompactList}\small\item\em Get the download address of historical message file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a0f0d26c06de9a8ea37f0bd883e616431}{get\+History\+As\+Local\+File}} (\$date\+Time, \$filename)
+\begin{DoxyCompactList}\small\item\em Download message history file to local. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_ad3e02f39fd2315a494d37dc671624fa6}{withdraw}} (\$msgs)
+\begin{DoxyCompactList}\small\item\em Server message withdrawal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_message_a3a95f8186f9af093c86c95b80af2948e}{delete\+Session}} (\$username, \$channel, \$type, \$delete\+\_\+roam=true)
+\begin{DoxyCompactList}\small\item\em Server side one-\/way deletion session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_message}{Message}}} is used to send message 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_message_a7bfa86af9c8f4ad8fa2c0073680306ed}\label{class_easemob_1_1_message_a7bfa86af9c8f4ad8fa2c0073680306ed}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!audio@{audio}}
+\index{audio@{audio}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{audio()}{audio()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::audio (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send voice message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a3e2ecf4983a71b61f5f92249d34d5d76}\label{class_easemob_1_1_message_a3e2ecf4983a71b61f5f92249d34d5d76}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!cmd@{cmd}}
+\index{cmd@{cmd}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{cmd()}{cmd()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::cmd (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send transparent message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a333fc0fb19e16e61dd083b7fcdb4c2ad}\label{class_easemob_1_1_message_a333fc0fb19e16e61dd083b7fcdb4c2ad}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!countMissedMessages@{countMissedMessages}}
+\index{countMissedMessages@{countMissedMessages}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{countMissedMessages()}{countMissedMessages()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::count\+Missed\+Messages (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Get the number of user offline messages. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$array Number of offline messages or errors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a9f40ca25edae812df13be0c546dab005}\label{class_easemob_1_1_message_a9f40ca25edae812df13be0c546dab005}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!custom@{custom}}
+\index{custom@{custom}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{custom()}{custom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::custom (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send custom message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a3a95f8186f9af093c86c95b80af2948e}\label{class_easemob_1_1_message_a3a95f8186f9af093c86c95b80af2948e}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!deleteSession@{deleteSession}}
+\index{deleteSession@{deleteSession}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{deleteSession()}{deleteSession()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::delete\+Session (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$channel,  }\item[{}]{\$type,  }\item[{}]{\$delete\+\_\+roam = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Server side one-\/way deletion session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+string & {\em \$channel} & Session ID to delete. \\
+\hline
+string & {\em \$type} & Session type. Chat\+: single chat session; \mbox{\hyperlink{class_easemob_1_1_group}{Group}} chat\+: group chat conversation. \\
+\hline
+string & {\em \$delete\+\_\+roam} & Whether to delete the server message. It cannot be empty. True\+: Yes; False\+: No. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a6107b952bce223b8638b5454c6010ed1}\label{class_easemob_1_1_message_a6107b952bce223b8638b5454c6010ed1}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!file@{file}}
+\index{file@{file}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::file (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send file message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a0f0d26c06de9a8ea37f0bd883e616431}\label{class_easemob_1_1_message_a0f0d26c06de9a8ea37f0bd883e616431}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!getHistoryAsLocalFile@{getHistoryAsLocalFile}}
+\index{getHistoryAsLocalFile@{getHistoryAsLocalFile}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{getHistoryAsLocalFile()}{getHistoryAsLocalFile()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::get\+History\+As\+Local\+File (\begin{DoxyParamCaption}\item[{}]{\$date\+Time,  }\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+
+
+Download message history file to local. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$datetime} & Time, only one hour of messages can be obtained at a time. The format is yyyymmddhh, such as 2018112717. \\
+\hline
+string & {\em \$filename} & The downloaded file name and message history file are GZ compressed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Download success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a39c471ba3cf56b3b390a77197ba64ef5}\label{class_easemob_1_1_message_a39c471ba3cf56b3b390a77197ba64ef5}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!getHistoryAsUri@{getHistoryAsUri}}
+\index{getHistoryAsUri@{getHistoryAsUri}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{getHistoryAsUri()}{getHistoryAsUri()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::get\+History\+As\+Uri (\begin{DoxyParamCaption}\item[{}]{\$date\+Time }\end{DoxyParamCaption})}
+
+
+
+Get the download address of historical message file. 
+
+The export chat record interface is not a real-\/time interface. There is a certain delay in obtaining success, so it can not be used as an interface for real-\/time pulling messages. The following APIs require enterprise administrator privileges to access. This interface can only get historical messages for one hour at a time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$datetime} & Time, only one hour of messages can be obtained at a time. The format is yyyymmddhh, such as 2018112717. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$array Chat record file download address or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a4b6f402d9f9303e61de187a9f7fdc2dc}\label{class_easemob_1_1_message_a4b6f402d9f9303e61de187a9f7fdc2dc}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!image@{image}}
+\index{image@{image}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::image (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send picture message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a98a2a3439e7ad7c40e4488c87e4557c0}\label{class_easemob_1_1_message_a98a2a3439e7ad7c40e4488c87e4557c0}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!isMessageDeliveredToUser@{isMessageDeliveredToUser}}
+\index{isMessageDeliveredToUser@{isMessageDeliveredToUser}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{isMessageDeliveredToUser()}{isMessageDeliveredToUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::is\+Message\+Delivered\+To\+User (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get the status of an offline message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+string & {\em \$msg\+Id} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} ID number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$array Offline message status (delivered\+: indicates that the message has been delivered; undelivered\+: indicates that the message has not been delivered; msg\+\_\+not\+\_\+found\+: the message does not exist) or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_afbf53a1a85ecdd92b407338470b3bf41}\label{class_easemob_1_1_message_afbf53a1a85ecdd92b407338470b3bf41}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!location@{location}}
+\index{location@{location}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{location()}{location()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::location (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send location message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a977a164aafd5f0702825c032f749e126}\label{class_easemob_1_1_message_a977a164aafd5f0702825c032f749e126}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!text@{text}}
+\index{text@{text}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::text (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send text message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_a4f98f2385555326c6b2043477ca9cfd5}\label{class_easemob_1_1_message_a4f98f2385555326c6b2043477ca9cfd5}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!video@{video}}
+\index{video@{video}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{video()}{video()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::video (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type,  }\item[{}]{\$target,  }\item[{}]{\$message,  }\item[{}]{\$from = {\ttfamily \textquotesingle{}admin\textquotesingle{}},  }\item[{}]{\$sync\+\_\+device = {\ttfamily false},  }\item[{}]{\$is\+Online = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Send video message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+type} & Type of target to send; Users\+: send messages to users, chatgroups\+: send messages to groups, chatrooms\+: send messages to chat rooms \\
+\hline
+array & {\em \$target} & Target of transmission; Note that you need to use the array here. The maximum number of users added in the array is 600 by default. Even if there is only one user, you should also use the array \mbox{[}\textquotesingle{}u1 \textquotesingle{}\mbox{]}; When sending to the user, the array element is the user name. When sending to the group, the array element is the groupid. \\
+\hline
+array & {\em \$message} & \mbox{\hyperlink{class_easemob_1_1_message}{Message}} content \\
+\hline
+string & {\em \$from} & Indicates the sender of the message; Without this field, the server will default to \char`\"{}from\char`\"{}\+: \char`\"{}admin\char`\"{}. When there is a from field but the value is an empty string (\char`\"{}\char`\"{}), the request fails \\
+\hline
+string & {\em \$sync\+\_\+device} & Whether to synchronize the message to the sender after the message is sent successfully. True\+: Yes; False (default)\+: No. \\
+\hline
+boolean & {\em \$is\+Online} & When the parameter value is true, the value representing routetype is \char`\"{}route\+\_\+online\char`\"{}, which means that the message is delivered only when the receiver is online. If the receiver is offline, it will not receive this message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array or error of the target and corresponding message ID sent to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_message_ad3e02f39fd2315a494d37dc671624fa6}\label{class_easemob_1_1_message_ad3e02f39fd2315a494d37dc671624fa6}} 
+\index{Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}!withdraw@{withdraw}}
+\index{withdraw@{withdraw}!Easemob\textbackslash{}Message@{Easemob\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{withdraw()}{withdraw()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Message\+::withdraw (\begin{DoxyParamCaption}\item[{}]{\$msgs }\end{DoxyParamCaption})}
+
+
+
+Server message withdrawal. 
+
+The application administrator can call the interface to withdraw the sent message. The default time limit is 2 minutes. If you need to adjust, please contact the business manager of Huanxin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$msgs} & For the message to be withdrawn, one-\/dimensional array represents withdrawing one message, and two-\/dimensional array represents withdrawing multiple messages
+\begin{DoxyItemize}
+\item {\ttfamily msg\+\_\+id} String type, the message ID of the withdrawal message.
+\item {\ttfamily to} Optional, String type, The recipient of the recall message. If it is not provided, the message body cannot be found and cannot be withdrawn. The single chat is the user name of the receiver, the group is the group ID, and the chat room is the chat room ID.
+\item {\ttfamily chat\+\_\+type} String type，\+Three message types of recall messages\+: single chat\+: chat; \mbox{\hyperlink{class_easemob_1_1_group}{Group}} chat\+: Group\+\_\+ chat； Chat room\+: chatroom.
+\item {\ttfamily from} Optional, String type，\+The message withdrawing party is not transmitted. By default, admin is used. By default, the message withdrawing party is the original message sender. You can specify the message withdrawing party through the user ID.
+\item {\ttfamily force} boolean type, Forced withdrawal\+:
+\begin{DoxyItemize}
+\item true\+: Yes, that is, the message can also be withdrawn after the server saves the message. See the server message saving time for details;
+\item false\+: No, if the set message withdrawal time limit exceeds the message saving time of the server, the message may have been deleted at the server due to expiration when requesting message withdrawal, and the message withdrawal request will fail, that is, the message cannot be withdrawn from the client receiving the message. 
+\end{DoxyItemize}
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Withdrawn message or error 
+\end{DoxyReturn}

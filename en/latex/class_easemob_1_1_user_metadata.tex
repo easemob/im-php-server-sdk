@@ -1,0 +1,120 @@
+\hypertarget{class_easemob_1_1_user_metadata}{}\doxysection{Easemob\textbackslash{}User\+Metadata Class Reference}
+\label{class_easemob_1_1_user_metadata}\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_ae5fff72da58ade9876bdeef89cfbf731}{set\+Metadata\+To\+User}} (\$username, \$metadata)
+\begin{DoxyCompactList}\small\item\em Set user properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a9a57717f173b88641ba6149b2e903f54}{get\+Metadata\+From\+User}} (\$username)
+\begin{DoxyCompactList}\small\item\em Get user properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a04c7ad4b584e1d0c001ca5412d9268de}{batch\+Get\+Metadata\+From\+User}} (\$targets, \$properties)
+\begin{DoxyCompactList}\small\item\em Get user attributes in batch. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a9776fd7e0a8e5b3930a8881ea3c1d2cc}{get\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em Get the total size of user attributes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a871bcf75059ee4c456e8838036e5772e}{delete\+Metadata\+From\+User}} (\$username)
+\begin{DoxyCompactList}\small\item\em Delete user attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_user_metadata}{User\+Metadata}}} is used to manage user attribute 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a04c7ad4b584e1d0c001ca5412d9268de}\label{class_easemob_1_1_user_metadata_a04c7ad4b584e1d0c001ca5412d9268de}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!batchGetMetadataFromUser@{batchGetMetadataFromUser}}
+\index{batchGetMetadataFromUser@{batchGetMetadataFromUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{batchGetMetadataFromUser()}{batchGetMetadataFromUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::batch\+Get\+Metadata\+From\+User (\begin{DoxyParamCaption}\item[{}]{\$targets,  }\item[{}]{\$properties }\end{DoxyParamCaption})}
+
+
+
+Get user attributes in batch. 
+
+Query user attributes according to the specified user name list and attribute list. If the specified user or user attribute does not exist, null data \{\} is returned. Specify up to 100 users at a time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$targets} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name list, up to 100 user names. \\
+\hline
+array & {\em \$properties} & Attribute name list. The query result only returns the attributes contained in the list, and the attributes not in the list will be ignored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_user}{User}} attribute (the array key is the user name, and the array value is the attribute corresponding to the user) or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a871bcf75059ee4c456e8838036e5772e}\label{class_easemob_1_1_user_metadata_a871bcf75059ee4c456e8838036e5772e}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!deleteMetadataFromUser@{deleteMetadataFromUser}}
+\index{deleteMetadataFromUser@{deleteMetadataFromUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{deleteMetadataFromUser()}{deleteMetadataFromUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::delete\+Metadata\+From\+User (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Delete user attributes. 
+
+Deletes all properties of the specified user. If the specified user or user attribute does not exist (may have been deleted), the deletion is also regarded as successful.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a9a57717f173b88641ba6149b2e903f54}\label{class_easemob_1_1_user_metadata_a9a57717f173b88641ba6149b2e903f54}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!getMetadataFromUser@{getMetadataFromUser}}
+\index{getMetadataFromUser@{getMetadataFromUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{getMetadataFromUser()}{getMetadataFromUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::get\+Metadata\+From\+User (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Get user properties. 
+
+Gets all user attribute key value pairs for the specified user. If the specified user or user attribute does not exist, null data \{\} is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_user}{User}} properties or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a9776fd7e0a8e5b3930a8881ea3c1d2cc}\label{class_easemob_1_1_user_metadata_a9776fd7e0a8e5b3930a8881ea3c1d2cc}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!getUsage@{getUsage}}
+\index{getUsage@{getUsage}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{getUsage()}{getUsage()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::get\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the total size of user attributes. 
+
+Get the attribute data size of all users under the app, in bytes.
+
+\begin{DoxyReturn}{Returns}
+float$\vert$array Total size of user attributes (unit\+: byte) or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_ae5fff72da58ade9876bdeef89cfbf731}\label{class_easemob_1_1_user_metadata_ae5fff72da58ade9876bdeef89cfbf731}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!setMetadataToUser@{setMetadataToUser}}
+\index{setMetadataToUser@{setMetadataToUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{setMetadataToUser()}{setMetadataToUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::set\+Metadata\+To\+User (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$metadata }\end{DoxyParamCaption})}
+
+
+
+Set user properties. 
+
+The content of user attributes is one or more plain text key value pairs. By default, the total length of attributes of a single user shall not exceed 2 kb. By default, the total length of all attributes of all users under an app shall not exceed 10 GB.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+array & {\em \$metadata} & Properties(key\+: attribute name; value\+: attribute value) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}

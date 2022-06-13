@@ -1,0 +1,227 @@
+\hypertarget{class_easemob_1_1_user}{}\doxysection{Easemob\textbackslash{}User Class Reference}
+\label{class_easemob_1_1_user}\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_user_a5b4c689348c06da2a2f5ba77b4b4e120}{create}} (\$users)
+\begin{DoxyCompactList}\small\item\em Register individual users $\vert$ Batch registered users. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_a3bda143ddf7a9fb1ac198a6fbc5bfc9b}{get}} (\$username)
+\begin{DoxyCompactList}\small\item\em Get the details of a single user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_afaa4a33a3c160d7d33d025998223ec4c}{list\+Users}} (\$limit=10, \$cursor=\textquotesingle{}\textquotesingle{}, \$activated=true)
+\begin{DoxyCompactList}\small\item\em Get users in batch. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_aa406253fc067fadef02378e11275aee3}{delete}} (\$username)
+\begin{DoxyCompactList}\small\item\em Delete single user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_aac6a8fd07174c865dc1068409efc03e2}{batch\+Delete}} (\$limit=0)
+\begin{DoxyCompactList}\small\item\em Batch delete user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_af4e16c53b5f7e0614cf43ffbabc84cf6}{update\+User\+Password}} (\$username, \$newpassword)
+\begin{DoxyCompactList}\small\item\em Modify user password. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_aa68816c8cfa3f400274b406eb34f93dd}{is\+User\+Online}} (\$username)
+\begin{DoxyCompactList}\small\item\em Get user online status. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_a6285f735d895a56e680992bf639387a4}{is\+Users\+Online}} (\$usernames)
+\begin{DoxyCompactList}\small\item\em Get online status of users in batch. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_aa0e50fa65f460aac37252c4bc006b41e}{force\+Logout\+All\+Devices}} (\$username)
+\begin{DoxyCompactList}\small\item\em Force user offline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_user}{User}}} is used to realize the establishment and management of user system 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_user_aac6a8fd07174c865dc1068409efc03e2}\label{class_easemob_1_1_user_aac6a8fd07174c865dc1068409efc03e2}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!batchDelete@{batchDelete}}
+\index{batchDelete@{batchDelete}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{batchDelete()}{batchDelete()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::batch\+Delete (\begin{DoxyParamCaption}\item[{}]{\$limit = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Batch delete user. 
+
+Delete a specified number of user accounts under an app.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & The number of users to be deleted is recommended to be between 100-\/500, not too large. It should be noted that only n users are deleted in batches at one time. The specific deleted users are not specified. You can see which users have been deleted in the return value. If the value of \$limit is less than or equal to 0, the value will be treated as 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Deleted user information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_a5b4c689348c06da2a2f5ba77b4b4e120}\label{class_easemob_1_1_user_a5b4c689348c06da2a2f5ba77b4b4e120}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!create@{create}}
+\index{create@{create}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::create (\begin{DoxyParamCaption}\item[{}]{\$users }\end{DoxyParamCaption})}
+
+
+
+Register individual users $\vert$ Batch registered users. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$users} & For the user information to be registered, a one-\/dimensional array is passed in when registering a single user, and a two-\/dimensional array is passed in when registering users in batch.
+\begin{DoxyItemize}
+\item {\ttfamily username} String type, user name, length cannot exceed 64 bytes. The following character sets are supported\+:
+\begin{DoxyItemize}
+\item 26 lowercase English letters a-\/z;
+\item 26 uppercase English letters A-\/Z;
+\item 10 digits 0-\/9;
+\item \char`\"{}\+\_\+\char`\"{}, \char`\"{}-\/\char`\"{} \char`\"{}.\char`\"{}. 
+\begin{DoxyPre}{\bfseries{Note: case insensitive. Under the same app, the user name is unique.}}\end{DoxyPre}
+
+\end{DoxyItemize}
+\item {\ttfamily password} String type, login password, the length cannot exceed 64 characters.
+\item {\ttfamily nickname} String type, nickname (optional). It is only used for the nickname displayed in the client push notification bar, not the nickname of the user\textquotesingle{}s personal information. The developer can customize this content. The length cannot exceed 100 characters. The following character sets are supported\+:
+\begin{DoxyItemize}
+\item 26 lowercase English letters a-\/z;
+\item 26 uppercase English letters A-\/Z;
+\item 10 digits 0-\/9;
+\item Chinese;
+\item Special characters; 
+\end{DoxyItemize}
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Registered user information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_aa406253fc067fadef02378e11275aee3}\label{class_easemob_1_1_user_aa406253fc067fadef02378e11275aee3}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!delete@{delete}}
+\index{delete@{delete}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::delete (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Delete single user. 
+
+Delete a user. If the user is the group owner of a group or chat room, the system will delete these groups and chat rooms at the same time. Please confirm during operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or failure or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_aa0e50fa65f460aac37252c4bc006b41e}\label{class_easemob_1_1_user_aa0e50fa65f460aac37252c4bc006b41e}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!forceLogoutAllDevices@{forceLogoutAllDevices}}
+\index{forceLogoutAllDevices@{forceLogoutAllDevices}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{forceLogoutAllDevices()}{forceLogoutAllDevices()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::force\+Logout\+All\+Devices (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Force user offline. 
+
+Force the user to change the user status to offline, and the user needs to log in again to use it normally.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_a3bda143ddf7a9fb1ac198a6fbc5bfc9b}\label{class_easemob_1_1_user_a3bda143ddf7a9fb1ac198a6fbc5bfc9b}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!get@{get}}
+\index{get@{get}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::get (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Get the details of a single user. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_user}{User}} information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_aa68816c8cfa3f400274b406eb34f93dd}\label{class_easemob_1_1_user_aa68816c8cfa3f400274b406eb34f93dd}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!isUserOnline@{isUserOnline}}
+\index{isUserOnline@{isUserOnline}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{isUserOnline()}{isUserOnline()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::is\+User\+Online (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Get user online status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Online status (true\+: online, false\+: offline) or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_a6285f735d895a56e680992bf639387a4}\label{class_easemob_1_1_user_a6285f735d895a56e680992bf639387a4}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!isUsersOnline@{isUsersOnline}}
+\index{isUsersOnline@{isUsersOnline}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{isUsersOnline()}{isUsersOnline()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::is\+Users\+Online (\begin{DoxyParamCaption}\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Get online status of users in batch. 
+
+View the online status of users in batches, with a maximum of 100 users at the same time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array, no more than 100 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_user}{User}} online status array (array key is user name, array value is user\textquotesingle{}s corresponding online status, true\+: online, false\+: offline) or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_afaa4a33a3c160d7d33d025998223ec4c}\label{class_easemob_1_1_user_afaa4a33a3c160d7d33d025998223ec4c}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!listUsers@{listUsers}}
+\index{listUsers@{listUsers}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{listUsers()}{listUsers()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::list\+Users (\begin{DoxyParamCaption}\item[{}]{\$limit = {\ttfamily 10},  }\item[{}]{\$cursor = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$activated = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Get users in batch. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & Gets the number of users. The default value is 10 and the maximum value is 100. If it exceeds 100, it will be returned as 100. \\
+\hline
+string & {\em \$cursor} & Cursor, used to display the list of users in pages. When initiating a batch query user request for the first time, there is no need to set cursor. After the request is successful, the user list on the first page will be obtained. If there is no response from cursor to the next user in the URL field of cursor, it indicates that there is no response from cursor to the next user in the URL field of cursor. \\
+\hline
+boolean & {\em \$activated} & Whether the user is activated. True\+: activated; False\+: blocking. The blocking needs to be lifted through the unblocking interface to log in normally. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Paging user information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_af4e16c53b5f7e0614cf43ffbabc84cf6}\label{class_easemob_1_1_user_af4e16c53b5f7e0614cf43ffbabc84cf6}} 
+\index{Easemob\textbackslash{}User@{Easemob\textbackslash{}User}!updateUserPassword@{updateUserPassword}}
+\index{updateUserPassword@{updateUserPassword}!Easemob\textbackslash{}User@{Easemob\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{updateUserPassword()}{updateUserPassword()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+::update\+User\+Password (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$newpassword }\end{DoxyParamCaption})}
+
+
+
+Modify user password. 
+
+You can change the user\textquotesingle{}s login password without providing the original password.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+string & {\em \$newpassword} & New password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}

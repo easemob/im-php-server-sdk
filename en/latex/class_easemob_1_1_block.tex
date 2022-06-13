@@ -1,0 +1,695 @@
+\hypertarget{class_easemob_1_1_block}{}\doxysection{Easemob\textbackslash{}Block Class Reference}
+\label{class_easemob_1_1_block}\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_block_aae7700a16c19be12f06e65afdeb37c38}{get\+Users\+Blocked\+From\+Send\+Msg\+To\+User}} (\$username)
+\begin{DoxyCompactList}\small\item\em Get user blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a7ac61b4cfdce9abaa57939199867ecd4}{block\+User\+Send\+Msg\+To\+User}} (\$username, \$usernames=array())
+\begin{DoxyCompactList}\small\item\em Add user blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_ace3675f20b5d1c6f7b5054df411a3aff}{unblock\+User\+Send\+Msg\+To\+User}} (\$username, \$blocked\+\_\+username)
+\begin{DoxyCompactList}\small\item\em Remove user blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a42501d1baa4e4f382afa9544a2ff1109}{block\+User\+Login}} (\$username)
+\begin{DoxyCompactList}\small\item\em Account number ban. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_acde4c09ff2429ccd5d035c5948d5313d}{unblock\+User\+Login}} (\$username)
+\begin{DoxyCompactList}\small\item\em Account lifting. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a2543c38cb216994e7cf61ee0da90d896}{block\+User\+Send\+Msg}} (\$username, \$chat\+Mute\+Duration=-\/1, \$groupchat\+Mute\+Duration=-\/1, \$chatroom\+Mute\+Duration=-\/1)
+\begin{DoxyCompactList}\small\item\em Set user global prohibitions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a8eb51c48b5b916f82c4a47e8a9a6f59b}{unblock\+User\+Send\+Msg}} (\$username)
+\begin{DoxyCompactList}\small\item\em Lifting the user\textquotesingle{}s global prohibition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a7811c5e8c498927baa89a38f45e4ea57}{get\+User\+Blocked}} (\$username)
+\begin{DoxyCompactList}\small\item\em Query single user ID global prohibitions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a5ff5ffaea9d0d9da37653b18c925e272}{get\+App\+Blocked}} (\$page\+Size=10, \$page\+Num=1)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_easemob_1_1_user}{User}} prohibitions for querying appkey. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a1ec68dd4a32efc8b55ed09501e4c82dc}{get\+Users\+Blocked\+Join\+Group}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Query group blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a61caacdf623eeaf7d604a2c1554b687f}{block\+User\+Join\+Group}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Add a single user to the group blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_ab99d406610dc81f3c749b441c537e7ea}{block\+Users\+Join\+Group}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch add users to group blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a05f6513e24ff0a8db31352fc408d9149}{unblock\+User\+Join\+Group}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Remove a single user from the group blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a7aeaae0b0c3fa29488c8d7636fff86c7}{unblock\+Users\+Join\+Group}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch remove users from group blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a69f05fc70a51470bbee8ba8e63cc1198}{block\+User\+Send\+Msg\+To\+Group}} (\$group\+Id, \$usernames, \$mute\+\_\+duration=-\/1)
+\begin{DoxyCompactList}\small\item\em Add group forbidden words. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_af3d2d6fa4f90b8a1a76fca0dcb2a22a7}{unblock\+User\+Send\+Msg\+To\+Group}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Release group members from prohibition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a0257f64167d82fd8e30835d9e9894b43}{get\+Users\+Blocked\+Send\+Msg\+To\+Group}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Get forbidden list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a3c788ad1c3e71ff471598c88d4e85a0e}{block\+All\+User\+Send\+Msg\+To\+Group}} (\$group\+Id, \$mute\+\_\+duration=-\/1)
+\begin{DoxyCompactList}\small\item\em Forbidden all members of the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a16178e0996d07ce28ce558394eca20c5}{unblock\+All\+User\+Send\+Msg\+To\+Group}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em Lifting the ban on all members of the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_ab5d0ac7c65f70f08a3b5cde84ad48c5d}{get\+Users\+Blocked\+Join\+Room}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em Query chat room blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a0ea4f1db014e1a41c5d6d90026a8939f}{block\+User\+Join\+Room}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Add a single user to the chat room blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a53174475626cbf28aa5db96d8aca120d}{block\+Users\+Join\+Room}} (\$room\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch add users to chat room blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_aa2f5f459e8813f2522885c578ca0dbc4}{unblock\+User\+Join\+Room}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em Remove a single user from the chat room blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a080a30aa9ba1b81d00958c8d5b947100}{unblock\+Users\+Join\+Room}} (\$room\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Batch remove users from chat room blacklist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_acb156dc5644c31b27a61acb7ddfa49cf}{block\+User\+Send\+Msg\+To\+Room}} (\$room\+Id, \$usernames, \$mute\+\_\+duration=-\/1)
+\begin{DoxyCompactList}\small\item\em Forbidden chat room members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_ad10665cb3735172dc96296cdc30ea5f3}{unblock\+User\+Send\+Msg\+To\+Room}} (\$room\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em Unblock chat room members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a555c40164236780cdaa6f088f7f5bdb7}{get\+Users\+Blocked\+Send\+Msg\+To\+Room}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em Get chat room forbidden list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_af5e96456acce6cefb870460bfa86a84a}{block\+All\+User\+Send\+Msg\+To\+Room}} (\$room\+Id, \$mute\+\_\+duration=-\/1)
+\begin{DoxyCompactList}\small\item\em Forbidden all members of the room. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_block_a75efb0b96a6ecf198d1d3b3a4be35ea0}{unblock\+All\+User\+Send\+Msg\+To\+Room}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em Lifting the ban on all members of the chat room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_easemob_1_1_block}{Block}}} is used to restrict access (add users to blacklists, group / chat room prohibitions, etc.) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easemob_1_1_block_a3c788ad1c3e71ff471598c88d4e85a0e}\label{class_easemob_1_1_block_a3c788ad1c3e71ff471598c88d4e85a0e}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockAllUserSendMsgToGroup@{blockAllUserSendMsgToGroup}}
+\index{blockAllUserSendMsgToGroup@{blockAllUserSendMsgToGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockAllUserSendMsgToGroup()}{blockAllUserSendMsgToGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+All\+User\+Send\+Msg\+To\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$mute\+\_\+duration = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Forbidden all members of the group. 
+
+One click prohibition for all group members, that is, all members of the group will be added to the prohibition list. After setting the prohibition of all members of the group, only users in the group white list can send messages in the group
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+int & {\em \$mute\+\_\+duration} & Forbidden speech duration, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_af5e96456acce6cefb870460bfa86a84a}\label{class_easemob_1_1_block_af5e96456acce6cefb870460bfa86a84a}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockAllUserSendMsgToRoom@{blockAllUserSendMsgToRoom}}
+\index{blockAllUserSendMsgToRoom@{blockAllUserSendMsgToRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockAllUserSendMsgToRoom()}{blockAllUserSendMsgToRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+All\+User\+Send\+Msg\+To\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$mute\+\_\+duration = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Forbidden all members of the room. 
+
+One click prohibition for all members of the chat room, that is, all members of the chat room will be added to the prohibition list. After setting the prohibition of all members in the chat room, only users in the chat room white list can send messages in the chat room.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+int & {\em \$mute\+\_\+duration} & Forbidden speech duration, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a61caacdf623eeaf7d604a2c1554b687f}\label{class_easemob_1_1_block_a61caacdf623eeaf7d604a2c1554b687f}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUserJoinGroup@{blockUserJoinGroup}}
+\index{blockUserJoinGroup@{blockUserJoinGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUserJoinGroup()}{blockUserJoinGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+User\+Join\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Add a single user to the group blacklist. 
+
+Add a user to the blacklist of a group. The group leader cannot be added to the blacklist of the group.
+
+After entering the group blacklist, the user will receive a message\+: you are kicked out of the group XXX. After that, the user cannot view the information of the group or receive the message of the group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a0ea4f1db014e1a41c5d6d90026a8939f}\label{class_easemob_1_1_block_a0ea4f1db014e1a41c5d6d90026a8939f}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUserJoinRoom@{blockUserJoinRoom}}
+\index{blockUserJoinRoom@{blockUserJoinRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUserJoinRoom()}{blockUserJoinRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+User\+Join\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Add a single user to the chat room blacklist. 
+
+Add a user to the blacklist of a chat room. Chat room owners cannot be blacklisted.
+
+After entering the chat room blacklist, users will receive a message\+: \char`\"{}you are kicked out of the chat room XXX\char`\"{}. After that, the user cannot view and send the information of the chat room.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a42501d1baa4e4f382afa9544a2ff1109}\label{class_easemob_1_1_block_a42501d1baa4e4f382afa9544a2ff1109}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUserLogin@{blockUserLogin}}
+\index{blockUserLogin@{blockUserLogin}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUserLogin()}{blockUserLogin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+User\+Login (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Account number ban. 
+
+If the user is disabled, he will be offline immediately and cannot log in until he is lifted. It is often used in the immediate processing of abnormal users.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a2543c38cb216994e7cf61ee0da90d896}\label{class_easemob_1_1_block_a2543c38cb216994e7cf61ee0da90d896}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUserSendMsg@{blockUserSendMsg}}
+\index{blockUserSendMsg@{blockUserSendMsg}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUserSendMsg()}{blockUserSendMsg()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+User\+Send\+Msg (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$chat\+Mute\+Duration = {\ttfamily -\/1},  }\item[{}]{\$groupchat\+Mute\+Duration = {\ttfamily -\/1},  }\item[{}]{\$chatroom\+Mute\+Duration = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Set user global prohibitions. 
+
+Set the global prohibition of single chat, group and chat room messages of a single user ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+int & {\em \$chat\+Mute\+Duration} & Single chat message forbidden time, in seconds, is a non negative integer. The maximum value is 2147483647, {\ttfamily 0 \textquotesingle{}means to cancel the forbidden time of single chat messages of the account,} -\/ 1\textquotesingle{} means that the account is set with permanent forbidden time, other values mean the specific forbidden time of the account, and negative values are illegal values. \\
+\hline
+int & {\em \$groupchat\+Mute\+Duration} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} message forbidden time, in seconds, and the rules are the same as above. \\
+\hline
+int & {\em \$chatroom\+Mute\+Duration} & Chat room message forbidden time, in seconds, and the rules are the same as above. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a69f05fc70a51470bbee8ba8e63cc1198}\label{class_easemob_1_1_block_a69f05fc70a51470bbee8ba8e63cc1198}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUserSendMsgToGroup@{blockUserSendMsgToGroup}}
+\index{blockUserSendMsgToGroup@{blockUserSendMsgToGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUserSendMsgToGroup()}{blockUserSendMsgToGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+User\+Send\+Msg\+To\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames,  }\item[{}]{\$mute\+\_\+duration = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Add group forbidden words. 
+
+No speaking to designated group members. After group members are banned, they will not be able to send messages in the group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+int & {\em \$mute\+\_\+duration} & Forbidden speech duration, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_acb156dc5644c31b27a61acb7ddfa49cf}\label{class_easemob_1_1_block_acb156dc5644c31b27a61acb7ddfa49cf}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUserSendMsgToRoom@{blockUserSendMsgToRoom}}
+\index{blockUserSendMsgToRoom@{blockUserSendMsgToRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUserSendMsgToRoom()}{blockUserSendMsgToRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+User\+Send\+Msg\+To\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames,  }\item[{}]{\$mute\+\_\+duration = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Forbidden chat room members. 
+
+Forbid users from speaking. After being banned, users will not be able to send messages in the chat room.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+int & {\em \$mute\+\_\+duration} & Forbidden time, in milliseconds. If \char`\"{}-\/ 1\char`\"{} means permanent (the actual expiration time is the fixed timestamp 4638873600000, i.\+e. 2117-\/01-\/01 00\+:00\+:00) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a7ac61b4cfdce9abaa57939199867ecd4}\label{class_easemob_1_1_block_a7ac61b4cfdce9abaa57939199867ecd4}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUserSendMsgToUser@{blockUserSendMsgToUser}}
+\index{blockUserSendMsgToUser@{blockUserSendMsgToUser}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUserSendMsgToUser()}{blockUserSendMsgToUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+User\+Send\+Msg\+To\+User (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$usernames = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+
+
+Add user blacklist. 
+
+Add one or more users to the user\textquotesingle{}s blacklist. Users in the blacklist cannot send messages to the user. The maximum number of blacklists for each user is 500.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+array & {\em \$usernames} & The user names that need to be added to the blacklist shall be submitted in the form of array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_ab99d406610dc81f3c749b441c537e7ea}\label{class_easemob_1_1_block_ab99d406610dc81f3c749b441c537e7ea}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUsersJoinGroup@{blockUsersJoinGroup}}
+\index{blockUsersJoinGroup@{blockUsersJoinGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUsersJoinGroup()}{blockUsersJoinGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+Users\+Join\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch add users to group blacklist. 
+
+Add multiple users to the blacklist of a group. You can add up to 60 users to the group blacklist at a time. The group leader cannot be added to the blacklist of the group.
+
+After entering the group blacklist, the user will receive a message\+: you are kicked out of the group XXX. After that, the user cannot view the information of the group or receive the message of the group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a53174475626cbf28aa5db96d8aca120d}\label{class_easemob_1_1_block_a53174475626cbf28aa5db96d8aca120d}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!blockUsersJoinRoom@{blockUsersJoinRoom}}
+\index{blockUsersJoinRoom@{blockUsersJoinRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{blockUsersJoinRoom()}{blockUsersJoinRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::block\+Users\+Join\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch add users to chat room blacklist. 
+
+Add multiple users to the blacklist of a chat room. You can add up to 60 users to the chat room blacklist at a time. Chat room owners cannot be blacklisted.
+
+After entering the chat room blacklist, users will receive a message\+: \char`\"{}you are kicked out of the chat room XXX\char`\"{}. After that, these users cannot view and send the information of the chat room.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a5ff5ffaea9d0d9da37653b18c925e272}\label{class_easemob_1_1_block_a5ff5ffaea9d0d9da37653b18c925e272}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!getAppBlocked@{getAppBlocked}}
+\index{getAppBlocked@{getAppBlocked}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{getAppBlocked()}{getAppBlocked()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::get\+App\+Blocked (\begin{DoxyParamCaption}\item[{}]{\$page\+Size = {\ttfamily 10},  }\item[{}]{\$page\+Num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_easemob_1_1_user}{User}} prohibitions for querying appkey. 
+
+Query the collection of the remaining time of the user\textquotesingle{}s forbidden words under the app key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$page\+Size} & Request to query the number of forbidden users displayed on each page. The default is 10 \\
+\hline
+int & {\em \$page\+Num} & The page number requested for query is page 1 by default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_user}{User}} forbidden information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a7811c5e8c498927baa89a38f45e4ea57}\label{class_easemob_1_1_block_a7811c5e8c498927baa89a38f45e4ea57}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!getUserBlocked@{getUserBlocked}}
+\index{getUserBlocked@{getUserBlocked}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{getUserBlocked()}{getUserBlocked()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::get\+User\+Blocked (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Query single user ID global prohibitions. 
+
+Query the forbidden words of single chat / group chat / chat room messages of a single user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_user}{User}} global forbidden information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_aae7700a16c19be12f06e65afdeb37c38}\label{class_easemob_1_1_block_aae7700a16c19be12f06e65afdeb37c38}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!getUsersBlockedFromSendMsgToUser@{getUsersBlockedFromSendMsgToUser}}
+\index{getUsersBlockedFromSendMsgToUser@{getUsersBlockedFromSendMsgToUser}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{getUsersBlockedFromSendMsgToUser()}{getUsersBlockedFromSendMsgToUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::get\+Users\+Blocked\+From\+Send\+Msg\+To\+User (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Get user blacklist. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Blacklist user name list or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a1ec68dd4a32efc8b55ed09501e4c82dc}\label{class_easemob_1_1_block_a1ec68dd4a32efc8b55ed09501e4c82dc}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!getUsersBlockedJoinGroup@{getUsersBlockedJoinGroup}}
+\index{getUsersBlockedJoinGroup@{getUsersBlockedJoinGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{getUsersBlockedJoinGroup()}{getUsersBlockedJoinGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::get\+Users\+Blocked\+Join\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Query group blacklist. 
+
+Query the list of users in a group blacklist. Users in the blacklist cannot view the information of the group or receive the message of the group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \mbox{\hyperlink{class_easemob_1_1_group}{Group}} blacklist information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_ab5d0ac7c65f70f08a3b5cde84ad48c5d}\label{class_easemob_1_1_block_ab5d0ac7c65f70f08a3b5cde84ad48c5d}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!getUsersBlockedJoinRoom@{getUsersBlockedJoinRoom}}
+\index{getUsersBlockedJoinRoom@{getUsersBlockedJoinRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{getUsersBlockedJoinRoom()}{getUsersBlockedJoinRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::get\+Users\+Blocked\+Join\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+Query chat room blacklist. 
+
+Query the list of users in a chat room blacklist. Users in the blacklist cannot view or receive information from this chat room.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Chat room blacklist information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a0257f64167d82fd8e30835d9e9894b43}\label{class_easemob_1_1_block_a0257f64167d82fd8e30835d9e9894b43}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!getUsersBlockedSendMsgToGroup@{getUsersBlockedSendMsgToGroup}}
+\index{getUsersBlockedSendMsgToGroup@{getUsersBlockedSendMsgToGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{getUsersBlockedSendMsgToGroup()}{getUsersBlockedSendMsgToGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::get\+Users\+Blocked\+Send\+Msg\+To\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Get forbidden list. 
+
+Get the list of forbidden users in the current group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Forbidden list information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a555c40164236780cdaa6f088f7f5bdb7}\label{class_easemob_1_1_block_a555c40164236780cdaa6f088f7f5bdb7}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!getUsersBlockedSendMsgToRoom@{getUsersBlockedSendMsgToRoom}}
+\index{getUsersBlockedSendMsgToRoom@{getUsersBlockedSendMsgToRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{getUsersBlockedSendMsgToRoom()}{getUsersBlockedSendMsgToRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::get\+Users\+Blocked\+Send\+Msg\+To\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+Get chat room forbidden list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Forbidden list information or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a16178e0996d07ce28ce558394eca20c5}\label{class_easemob_1_1_block_a16178e0996d07ce28ce558394eca20c5}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockAllUserSendMsgToGroup@{unblockAllUserSendMsgToGroup}}
+\index{unblockAllUserSendMsgToGroup@{unblockAllUserSendMsgToGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockAllUserSendMsgToGroup()}{unblockAllUserSendMsgToGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+All\+User\+Send\+Msg\+To\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+Lifting the ban on all members of the group. 
+
+One click to cancel the ban on all members of the group. After removal, group members can send messages normally in the group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a75efb0b96a6ecf198d1d3b3a4be35ea0}\label{class_easemob_1_1_block_a75efb0b96a6ecf198d1d3b3a4be35ea0}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockAllUserSendMsgToRoom@{unblockAllUserSendMsgToRoom}}
+\index{unblockAllUserSendMsgToRoom@{unblockAllUserSendMsgToRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockAllUserSendMsgToRoom()}{unblockAllUserSendMsgToRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+All\+User\+Send\+Msg\+To\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+Lifting the ban on all members of the chat room. 
+
+One click to cancel the ban on all members of the chat room. After removal, chat room members can send messages normally in the chat room.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a05f6513e24ff0a8db31352fc408d9149}\label{class_easemob_1_1_block_a05f6513e24ff0a8db31352fc408d9149}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUserJoinGroup@{unblockUserJoinGroup}}
+\index{unblockUserJoinGroup@{unblockUserJoinGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUserJoinGroup()}{unblockUserJoinGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+User\+Join\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Remove a single user from the group blacklist. 
+
+Remove the specified user from the group blacklist. For users in the group blacklist, if they need to join the group again, they need to be removed from the group blacklist first.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_aa2f5f459e8813f2522885c578ca0dbc4}\label{class_easemob_1_1_block_aa2f5f459e8813f2522885c578ca0dbc4}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUserJoinRoom@{unblockUserJoinRoom}}
+\index{unblockUserJoinRoom@{unblockUserJoinRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUserJoinRoom()}{unblockUserJoinRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+User\+Join\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Remove a single user from the chat room blacklist. 
+
+Remove the specified user from the chat room blacklist. For users in the chat room blacklist, if they need to join the chat room again, they need to be removed from the chat room blacklist first.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_acde4c09ff2429ccd5d035c5948d5313d}\label{class_easemob_1_1_block_acde4c09ff2429ccd5d035c5948d5313d}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUserLogin@{unblockUserLogin}}
+\index{unblockUserLogin@{unblockUserLogin}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUserLogin()}{unblockUserLogin()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+User\+Login (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Account lifting. 
+
+If the user is disabled, he will be offline immediately and cannot log in until he is lifted. It is often used in the immediate processing of abnormal users.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a8eb51c48b5b916f82c4a47e8a9a6f59b}\label{class_easemob_1_1_block_a8eb51c48b5b916f82c4a47e8a9a6f59b}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUserSendMsg@{unblockUserSendMsg}}
+\index{unblockUserSendMsg@{unblockUserSendMsg}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUserSendMsg()}{unblockUserSendMsg()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+User\+Send\+Msg (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+Lifting the user\textquotesingle{}s global prohibition. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_af3d2d6fa4f90b8a1a76fca0dcb2a22a7}\label{class_easemob_1_1_block_af3d2d6fa4f90b8a1a76fca0dcb2a22a7}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUserSendMsgToGroup@{unblockUserSendMsgToGroup}}
+\index{unblockUserSendMsgToGroup@{unblockUserSendMsgToGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUserSendMsgToGroup()}{unblockUserSendMsgToGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+User\+Send\+Msg\+To\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Release group members from prohibition. 
+
+Remove one or more group members from the forbidden list. After removal, group members can send messages normally in the group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_ad10665cb3735172dc96296cdc30ea5f3}\label{class_easemob_1_1_block_ad10665cb3735172dc96296cdc30ea5f3}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUserSendMsgToRoom@{unblockUserSendMsgToRoom}}
+\index{unblockUserSendMsgToRoom@{unblockUserSendMsgToRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUserSendMsgToRoom()}{unblockUserSendMsgToRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+User\+Send\+Msg\+To\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Unblock chat room members. 
+
+You can remove multiple members by removing users from the forbidden list. After removal, users can send messages in the chat room normally.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_ace3675f20b5d1c6f7b5054df411a3aff}\label{class_easemob_1_1_block_ace3675f20b5d1c6f7b5054df411a3aff}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUserSendMsgToUser@{unblockUserSendMsgToUser}}
+\index{unblockUserSendMsgToUser@{unblockUserSendMsgToUser}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUserSendMsgToUser()}{unblockUserSendMsgToUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+User\+Send\+Msg\+To\+User (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$blocked\+\_\+username }\end{DoxyParamCaption})}
+
+
+
+Remove user blacklist. 
+
+Remove the user from the user\textquotesingle{}s blacklist. After the user is removed from the blacklist, it can be restored to friends, or the user relationship without adding friends. Can send and receive messages normally.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name \\
+\hline
+string & {\em \$friend\+\_\+username} & Friends user name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a7aeaae0b0c3fa29488c8d7636fff86c7}\label{class_easemob_1_1_block_a7aeaae0b0c3fa29488c8d7636fff86c7}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUsersJoinGroup@{unblockUsersJoinGroup}}
+\index{unblockUsersJoinGroup@{unblockUsersJoinGroup}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUsersJoinGroup()}{unblockUsersJoinGroup()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+Users\+Join\+Group (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch remove users from group blacklist. 
+
+Remove multiple designated users from the group blacklist. For users in the group blacklist, if they need to join the group again, they need to be removed from the group blacklist first.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group\+Id} & \mbox{\hyperlink{class_easemob_1_1_group}{Group}} ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_block_a080a30aa9ba1b81d00958c8d5b947100}\label{class_easemob_1_1_block_a080a30aa9ba1b81d00958c8d5b947100}} 
+\index{Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}!unblockUsersJoinRoom@{unblockUsersJoinRoom}}
+\index{unblockUsersJoinRoom@{unblockUsersJoinRoom}!Easemob\textbackslash{}Block@{Easemob\textbackslash{}Block}}
+\doxysubsubsection{\texorpdfstring{unblockUsersJoinRoom()}{unblockUsersJoinRoom()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Block\+::unblock\+Users\+Join\+Room (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+Batch remove users from chat room blacklist. 
+
+Remove multiple designated users from the chat room blacklist. You can remove up to 60 users at a time. For users in the chat room blacklist, if they need to join the chat room again, they need to be removed from the chat room blacklist first.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$room\+Id} & Chat room ID \\
+\hline
+array & {\em \$usernames} & \mbox{\hyperlink{class_easemob_1_1_user}{User}} name array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array Success or error 
+\end{DoxyReturn}

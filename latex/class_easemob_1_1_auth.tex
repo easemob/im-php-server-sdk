@@ -1,0 +1,69 @@
+\hypertarget{class_easemob_1_1_auth}{}\doxysection{Easemob\textbackslash{}Auth类 参考}
+\label{class_easemob_1_1_auth}\index{Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_auth_a9d79ec754e40d3f9a6f9e48f72ff4d6f}{\+\_\+\+\_\+construct}} ( \$app\+Key, \$client\+Id\+Or\+App\+ID, \$client\+Secret\+Or\+App\+Certificate, \$expire\+Time\+In\+Seconds=2592000, \$is\+Agora=false, \$uuid=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em 构造方法 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_auth_af095cc349704cd8bf0ae163d2ca99a9b}{get\+User\+Token}} (\$username, \$password=null, \$expire\+In\+Seconds=3600, \$configuration=null)
+\begin{DoxyCompactList}\small\item\em 获取用户 token \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+授权类 @final 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_auth_a9d79ec754e40d3f9a6f9e48f72ff4d6f}\label{class_easemob_1_1_auth_a9d79ec754e40d3f9a6f9e48f72ff4d6f}} 
+\index{Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Auth\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$app\+Key,  }\item[{}]{\$client\+Id\+Or\+App\+ID,  }\item[{}]{\$client\+Secret\+Or\+App\+Certificate,  }\item[{}]{\$expire\+Time\+In\+Seconds = {\ttfamily 2592000},  }\item[{}]{\$is\+Agora = {\ttfamily false},  }\item[{}]{\$uuid = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+构造方法 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$app\+Key} & APP 的唯一标识，规则是 \$\{org\+\_\+name\}\#\$\{app\+\_\+name\} \\
+\hline
+string & {\em \$client\+Id\+Or\+App\+ID} & 环信 App 的 client\+\_\+id 或者声网 App ID，由 boolean \$is\+Agora 决定 \\
+\hline
+string & {\em \$client\+Secret\+Or\+App\+Certificate} & 环信 App 的 client\+\_\+secret 或者 声网 App 证书，由 boolean \$is\+Agora 决定 \\
+\hline
+int & {\em \$expire\+Time\+In\+Seconds} & token 有效期，单位（秒） \\
+\hline
+mixed & {\em \$proxy} & 代理信息 \\
+\hline
+boolean & {\em \$is\+Agora} & 是否使用声网 token 初始化 \\
+\hline
+string & {\em \$uuid} & 环信用户 uuid \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_auth_af095cc349704cd8bf0ae163d2ca99a9b}\label{class_easemob_1_1_auth_af095cc349704cd8bf0ae163d2ca99a9b}} 
+\index{Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}!getUserToken@{getUserToken}}
+\index{getUserToken@{getUserToken}!Easemob\textbackslash{}Auth@{Easemob\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{getUserToken()}{getUserToken()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+Auth\+::get\+User\+Token (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password = {\ttfamily null},  }\item[{}]{\$expire\+In\+Seconds = {\ttfamily 3600},  }\item[{}]{\$configuration = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+获取用户 token 
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 环信 IM 用户名，或者 uuid \\
+\hline
+string & {\em \$password} & 环信用户密码，传递时获取 \mbox{\hyperlink{namespace_easemob}{Easemob}} user\+Token 否则获取 Agora user\+Token \\
+\hline
+int & {\em \$expire\+In\+Seconds} & token 过期时间，单位：s \\
+\hline
+array & {\em \$configuration} & privileges \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 用户 token 信息或者错误 
+\end{DoxyReturn}

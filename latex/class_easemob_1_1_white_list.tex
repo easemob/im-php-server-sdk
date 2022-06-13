@@ -1,0 +1,199 @@
+\hypertarget{class_easemob_1_1_white_list}{}\doxysection{Easemob\textbackslash{}White\+List类 参考}
+\label{class_easemob_1_1_white_list}\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a07bbc37f8e083bbf2f4f395f710bfe9d}{get\+Group\+White\+List}} (\$group\+Id)
+\begin{DoxyCompactList}\small\item\em 查询群组白名单 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_aedbfd487214e44ecae1f5f83369a8cd1}{add\+User\+To\+Group\+White\+List}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 添加单个用户至群组白名单 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a7f23bfbb96a0804537c02139cf7269d9}{add\+Users\+To\+Group\+White\+List}} (\$group\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em 批量添加用户至群组白名单 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a2ef35a1f35b7ec3dae41a248d5807362}{remove\+Users\+From\+Group\+White\+List}} (\$group\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 将用户移除群组白名单 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a220a99ecc6b8fba640807e2e99a2b272}{get\+Room\+White\+List}} (\$room\+Id)
+\begin{DoxyCompactList}\small\item\em 查询聊天室白名单 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_abed7ff363180dd41bcc5901385d28a78}{add\+User\+To\+Room\+White\+List}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 添加单个用户至聊天室白名单 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_af706a7374186fcedad4221f711e05b11}{add\+Users\+To\+Room\+White\+List}} (\$room\+Id, \$usernames)
+\begin{DoxyCompactList}\small\item\em 批量添加用户至聊天室白名单 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_white_list_a9890f8b6f81ea32bfc6444fdc3e2d5b0}{remove\+Users\+From\+Room\+White\+List}} (\$room\+Id, \$username)
+\begin{DoxyCompactList}\small\item\em 将用户移除聊天室白名单 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_easemob_1_1_white_list}{White\+List}} 用于管理群组、聊天室白名单 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a7f23bfbb96a0804537c02139cf7269d9}\label{class_easemob_1_1_white_list_a7f23bfbb96a0804537c02139cf7269d9}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUsersToGroupWhiteList@{addUsersToGroupWhiteList}}
+\index{addUsersToGroupWhiteList@{addUsersToGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUsersToGroupWhiteList()}{addUsersToGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+Users\+To\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+批量添加用户至群组白名单 
+
+添加多个用户至群组白名单。你一次最多可添加 60 个用户。用户添加至白名单后在群组全员禁言时仍可以在群组中发送消息。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 id \\
+\hline
+array & {\em \$usernames} & 用户名数组 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_af706a7374186fcedad4221f711e05b11}\label{class_easemob_1_1_white_list_af706a7374186fcedad4221f711e05b11}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUsersToRoomWhiteList@{addUsersToRoomWhiteList}}
+\index{addUsersToRoomWhiteList@{addUsersToRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUsersToRoomWhiteList()}{addUsersToRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+Users\+To\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$usernames }\end{DoxyParamCaption})}
+
+
+
+批量添加用户至聊天室白名单 
+
+添加多个用户至聊天室白名单。你一次最多可添加 60 个用户。用户添加至聊天室白名单后，在聊天室全员禁言时，仍可以在聊天室中发送消息。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 id \\
+\hline
+array & {\em \$usernames} & 用户名数组 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_aedbfd487214e44ecae1f5f83369a8cd1}\label{class_easemob_1_1_white_list_aedbfd487214e44ecae1f5f83369a8cd1}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUserToGroupWhiteList@{addUserToGroupWhiteList}}
+\index{addUserToGroupWhiteList@{addUserToGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUserToGroupWhiteList()}{addUserToGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+User\+To\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+添加单个用户至群组白名单 
+
+查询一个群组将指定的单个用户添加至群组白名单。用户在添加至群组白名单后，当群组全员被禁言时，仍可以在群组中发送消息。白名单中的用户列表。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 id \\
+\hline
+string & {\em \$username} & 用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_abed7ff363180dd41bcc5901385d28a78}\label{class_easemob_1_1_white_list_abed7ff363180dd41bcc5901385d28a78}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!addUserToRoomWhiteList@{addUserToRoomWhiteList}}
+\index{addUserToRoomWhiteList@{addUserToRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{addUserToRoomWhiteList()}{addUserToRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::add\+User\+To\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+添加单个用户至聊天室白名单 
+
+将指定的单个用户添加至聊天室白名单。用户添加至聊天室白名单后，当聊天室全员禁言时，仍可以在聊天室中发送消息。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 id \\
+\hline
+string & {\em \$username} & 用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a07bbc37f8e083bbf2f4f395f710bfe9d}\label{class_easemob_1_1_white_list_a07bbc37f8e083bbf2f4f395f710bfe9d}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!getGroupWhiteList@{getGroupWhiteList}}
+\index{getGroupWhiteList@{getGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{getGroupWhiteList()}{getGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::get\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id }\end{DoxyParamCaption})}
+
+
+
+查询群组白名单 
+
+查询一个群组白名单中的用户列表。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 白名单列表或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a220a99ecc6b8fba640807e2e99a2b272}\label{class_easemob_1_1_white_list_a220a99ecc6b8fba640807e2e99a2b272}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!getRoomWhiteList@{getRoomWhiteList}}
+\index{getRoomWhiteList@{getRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{getRoomWhiteList()}{getRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::get\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id }\end{DoxyParamCaption})}
+
+
+
+查询聊天室白名单 
+
+查询一个聊天室白名单中的用户列表。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 白名单列表或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a2ef35a1f35b7ec3dae41a248d5807362}\label{class_easemob_1_1_white_list_a2ef35a1f35b7ec3dae41a248d5807362}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!removeUsersFromGroupWhiteList@{removeUsersFromGroupWhiteList}}
+\index{removeUsersFromGroupWhiteList@{removeUsersFromGroupWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{removeUsersFromGroupWhiteList()}{removeUsersFromGroupWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::remove\+Users\+From\+Group\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$group\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+将用户移除群组白名单 
+
+将指定用户从群组白名单中移除。你每次最多可移除 60 个用户。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$group\+Id} & 群组 id \\
+\hline
+string & {\em \$username} & 用户名，可以以逗号分隔传递多个用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_white_list_a9890f8b6f81ea32bfc6444fdc3e2d5b0}\label{class_easemob_1_1_white_list_a9890f8b6f81ea32bfc6444fdc3e2d5b0}} 
+\index{Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}!removeUsersFromRoomWhiteList@{removeUsersFromRoomWhiteList}}
+\index{removeUsersFromRoomWhiteList@{removeUsersFromRoomWhiteList}!Easemob\textbackslash{}WhiteList@{Easemob\textbackslash{}WhiteList}}
+\doxysubsubsection{\texorpdfstring{removeUsersFromRoomWhiteList()}{removeUsersFromRoomWhiteList()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+White\+List\+::remove\+Users\+From\+Room\+White\+List (\begin{DoxyParamCaption}\item[{}]{\$room\+Id,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+将用户移除聊天室白名单 
+
+将指定用户从聊天室白名单移除。你每次最多可移除 60 个用户。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$room\+Id} & 聊天室 id \\
+\hline
+string & {\em \$username} & 用户名，可以以逗号分隔传递多个用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}

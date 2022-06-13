@@ -1,0 +1,120 @@
+\hypertarget{class_easemob_1_1_user_metadata}{}\doxysection{Easemob\textbackslash{}User\+Metadata类 参考}
+\label{class_easemob_1_1_user_metadata}\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_ae5fff72da58ade9876bdeef89cfbf731}{set\+Metadata\+To\+User}} (\$username, \$metadata)
+\begin{DoxyCompactList}\small\item\em 设置用户属性 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a9a57717f173b88641ba6149b2e903f54}{get\+Metadata\+From\+User}} (\$username)
+\begin{DoxyCompactList}\small\item\em 获取用户属性 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a04c7ad4b584e1d0c001ca5412d9268de}{batch\+Get\+Metadata\+From\+User}} (\$targets, \$properties)
+\begin{DoxyCompactList}\small\item\em 批量获取用户属性 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a9776fd7e0a8e5b3930a8881ea3c1d2cc}{get\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em 获取用户属性总量大小 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_easemob_1_1_user_metadata_a871bcf75059ee4c456e8838036e5772e}{delete\+Metadata\+From\+User}} (\$username)
+\begin{DoxyCompactList}\small\item\em 删除用户属性 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{class_easemob_1_1_user_metadata}{User\+Metadata}} 用来管理用户属性 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a04c7ad4b584e1d0c001ca5412d9268de}\label{class_easemob_1_1_user_metadata_a04c7ad4b584e1d0c001ca5412d9268de}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!batchGetMetadataFromUser@{batchGetMetadataFromUser}}
+\index{batchGetMetadataFromUser@{batchGetMetadataFromUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{batchGetMetadataFromUser()}{batchGetMetadataFromUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::batch\+Get\+Metadata\+From\+User (\begin{DoxyParamCaption}\item[{}]{\$targets,  }\item[{}]{\$properties }\end{DoxyParamCaption})}
+
+
+
+批量获取用户属性 
+
+根据指定的用户名列表和属性列表，查询用户属性。如果指定的用户或用户属性不存在，返回空数据 \{\}。 每次最多指定 100 个用户。
+
+
+\begin{DoxyParams}[1]{参数}
+array & {\em \$targets} & 用户名列表，最多 100 个用户名。 \\
+\hline
+array & {\em \$properties} & 属性名列表，查询结果只返回该列表中包含的属性，不在该列表中的属性将被忽略。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 用户属性（数组键是用户名，数组值是用户对应的属性）或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a871bcf75059ee4c456e8838036e5772e}\label{class_easemob_1_1_user_metadata_a871bcf75059ee4c456e8838036e5772e}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!deleteMetadataFromUser@{deleteMetadataFromUser}}
+\index{deleteMetadataFromUser@{deleteMetadataFromUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{deleteMetadataFromUser()}{deleteMetadataFromUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::delete\+Metadata\+From\+User (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+删除用户属性 
+
+删除指定用户的所有属性。如果指定的用户或用户属性不存在（可能已删除），也视为删除成功。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a9a57717f173b88641ba6149b2e903f54}\label{class_easemob_1_1_user_metadata_a9a57717f173b88641ba6149b2e903f54}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!getMetadataFromUser@{getMetadataFromUser}}
+\index{getMetadataFromUser@{getMetadataFromUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{getMetadataFromUser()}{getMetadataFromUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::get\+Metadata\+From\+User (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+
+
+获取用户属性 
+
+获取指定用户的所有用户属性键值对。如果指定的用户或用户属性不存在，返回空数据 \{\}。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 要获取属性的用户名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+array 用户属性或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_a9776fd7e0a8e5b3930a8881ea3c1d2cc}\label{class_easemob_1_1_user_metadata_a9776fd7e0a8e5b3930a8881ea3c1d2cc}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!getUsage@{getUsage}}
+\index{getUsage@{getUsage}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{getUsage()}{getUsage()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::get\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取用户属性总量大小 
+
+获取该 app 下所有用户的属性数据大小，单位为 byte。
+
+\begin{DoxyReturn}{返回}
+float$\vert$array 用户属性总量大小（单位：byte）或者错误 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easemob_1_1_user_metadata_ae5fff72da58ade9876bdeef89cfbf731}\label{class_easemob_1_1_user_metadata_ae5fff72da58ade9876bdeef89cfbf731}} 
+\index{Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}!setMetadataToUser@{setMetadataToUser}}
+\index{setMetadataToUser@{setMetadataToUser}!Easemob\textbackslash{}UserMetadata@{Easemob\textbackslash{}UserMetadata}}
+\doxysubsubsection{\texorpdfstring{setMetadataToUser()}{setMetadataToUser()}}
+{\footnotesize\ttfamily Easemob\textbackslash{}\+User\+Metadata\+::set\+Metadata\+To\+User (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$metadata }\end{DoxyParamCaption})}
+
+
+
+设置用户属性 
+
+用户属性的内容为一个或多个纯文本键值对，默认单一用户的属性总长不得超过 2 KB，默认一个 app 下所有用户的所有属性总长不得超过 10 GB。
+
+
+\begin{DoxyParams}[1]{参数}
+string & {\em \$username} & 要设置属性的用户名 \\
+\hline
+array & {\em \$metadata} & 要设置的属性（键：属性名；值：属性值） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+boolean$\vert$array 成功或者错误 
+\end{DoxyReturn}
