@@ -361,7 +361,7 @@ final class Auth
      */
     private function getRemoteApiUri()
     {
-        $uri = self::$DNS_URL . '/easemob/server.json?app_key=' . $this->appKey;
+        $uri = self::$DNS_URL . '/easemob/server.json?app_key=' . urlencode($this->appKey);
         $resp = Http::get($uri);
         if ($resp->ok()) {
             $data = $resp->data();
