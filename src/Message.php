@@ -528,6 +528,42 @@ final class Message
      */
     private function send($type, $target_type, $target, $message, $from = 'admin', $sync_device = false, $isOnline = false)
     {
+        // 参数验证
+        $this->validateSendParameters($type, $target_type, $target, $message, $from);
+
+        // 处理特殊字段
+        $ext = $this->extractExtFromMessage($message);
+        $roam_ignore_users = $this->extractRoamIgnoreUsersFromMessage($message);
+        $need_group_ack = $this->extractNeedGroupAckFromMessage($target_type, $message);
+
+        // 构建消息体
+        $body_content = $this->buildBodyContent($type, $message);
+
+        // 处理特定类型消息的URL
+        $body_content = $this->processMessageUrls($type, $body_content);
+
+        // 验证自定义消息格式
+        if ($type === 'custom') {
+            $this->validateCustomMessage($message);
+        }
+
+        // 构建请求体
+        $body = $this->buildRequestBody($from, $target, $type, $body_content, $roam_ignore_users, $ext, $target_type, $need_group_ack, $sync_device, $isOnline);
+
+        // 发送请求
+        $uri = $this->auth->getBaseUri() . '/messages/' . $target_type;
+        $resp = Http::post($uri, $body, $this->auth->headers());
+
+        if (!$resp->ok()) {
+            return \Easemob\error($resp);
+        }
+
+        $data = $resp->data();
+        return $data['data'];
+    }
+
+    private function validateSendParameters($type, $target_type, $target, $message, $from)
+    {
         if (!trim($type)) {
             \Easemob\exception('Please enter type');
         }
@@ -548,13 +584,14 @@ final class Message
             \Easemob\exception('If the message sender is delivered, it cannot be empty');
         }
 
-        // 验证 target_type 的有效值
         $valid_target_types = ['users', 'chatgroups', 'chatrooms'];
         if (!in_array($target_type, $valid_target_types)) {
             \Easemob\exception('Invalid target_type. Must be one of: users, chatgroups, chatrooms');
         }
+    }
 
-        // 处理扩展属性
+    private function extractExtFromMessage(&$message)
+    {
         $ext = null;
         if (isset($message['ext'])) {
             if (!$message['ext']) {
@@ -565,17 +602,20 @@ final class Message
             $ext = $message['ext'];
             unset($message['ext']);
         }
+        return $ext;
+    }
 
-        // 处理 roam_ignore_users
+    private function extractRoamIgnoreUsersFromMessage(&$message)
+    {
         $roam_ignore_users = isset($message['roam_ignore_users']) ? $message['roam_ignore_users'] : [];
         if (isset($message['roam_ignore_users'])) {
             unset($message['roam_ignore_users']);
         }
-        if (!is_array($roam_ignore_users)) {
-            $roam_ignore_users = [];
-        }
+        return is_array($roam_ignore_users) ? $roam_ignore_users : [];
+    }
 
-        // 处理 need_group_ack (仅用于群聊)
+    private function extractNeedGroupAckFromMessage($target_type, &$message)
+    {
         $need_group_ack = false;
         if ($target_type === 'chatgroups') {
             $need_group_ack = isset($message['need_group_ack']) ? (bool)$message['need_group_ack'] : false;
@@ -583,29 +623,28 @@ final class Message
                 unset($message['need_group_ack']);
             }
         }
-        
-        // 构建消息体 body
-        $body_content = null;
-        if ($type == 'txt') {
-            $body_content = array('msg' => $message['msg']);
-        } else {
-            $body_content = $message;
-        }
+        return $need_group_ack;
+    }
 
-        // 根据消息类型处理 body 内容
+    private function buildBodyContent($type, $message)
+    {
+        if ($type == 'txt') {
+            return array('msg' => $message['msg']);
+        }
+        return $message;
+    }
+
+    private function processMessageUrls($type, $body_content)
+    {
         switch ($type) {
-            case 'txt':
-                // 文本消息，body_content 已经设置
-                break;
-            case 'img': case 'audio':
-                // 图片消息 | 语音消息
+            case 'img':
+            case 'audio':
                 if (isset($body_content['uuid'])) {
                     $body_content['url'] = $this->auth->getBaseUri() . '/chatfiles/' . $body_content['uuid'];
                     unset($body_content['uuid']);
                 }
                 break;
             case 'video':
-                // 视频消息
                 if (isset($body_content['uuid'])) {
                     $body_content['url'] = $this->auth->getBaseUri() . '/chatfiles/' . $body_content['uuid'];
                 }
@@ -617,35 +656,33 @@ final class Message
                     unset($body_content['uuid']);
                 }
                 break;
-            case 'loc': case 'cmd':
-                // 位置消息 | 透传消息
-                break;
-            case 'custom':
-                // 自定义消息
-                if (!isset($message['customEvent']) || !preg_match('/^[a-zA-Z0-9-_\/\.]{1,32}$/', $message['customEvent'])) {
-                    \Easemob\exception('User defined event type format error');
-                }
+        }
+        return $body_content;
+    }
 
-                if (isset($message['customExts']) && !is_array($message['customExts'])) {
-                    \Easemob\exception('User defined event attribute format error');
-                } elseif (isset($message['customExts'])) {
-                    if (count($message['customExts']) > 16) {
-                        \Easemob\exception('User defined event attributes can contain at most 16 elements');
-                    } else {
-                        foreach ($message['customExts'] as $key => $val) {
-                            if (!is_string($key) || !is_string($val)) {
-                                \Easemob\exception('User defined event attribute element key values can only be strings');
-                            }
-                        }
-                    }
-                }
-                break;
+    private function validateCustomMessage($message)
+    {
+        if (!isset($message['customEvent']) || !preg_match('/^[a-zA-Z0-9-_\/\.]{1,32}$/', $message['customEvent'])) {
+            \Easemob\exception('User defined event type format error');
         }
 
-        // 构建请求 URI
-        $uri = $this->auth->getBaseUri() . '/messages/' . $target_type;
+        if (isset($message['customExts']) && !is_array($message['customExts'])) {
+            \Easemob\exception('User defined event attribute format error');
+        } elseif (isset($message['customExts'])) {
+            if (count($message['customExts']) > 16) {
+                \Easemob\exception('User defined event attributes can contain at most 16 elements');
+            } else {
+                foreach ($message['customExts'] as $key => $val) {
+                    if (!is_string($key) || !is_string($val)) {
+                        \Easemob\exception('User defined event attribute element key values can only be strings');
+                    }
+                }
+            }
+        }
+    }
 
-        // 构建请求 body
+    private function buildRequestBody($from, $target, $type, $body_content, $roam_ignore_users, $ext, $target_type, $need_group_ack, $sync_device, $isOnline)
+    {
         $body = array(
             'from' => $from,
             'to' => $target,
@@ -654,31 +691,23 @@ final class Message
             'roam_ignore_users' => $roam_ignore_users
         );
 
-        // 添加扩展属性
         if ($ext !== null) {
             $body['ext'] = $ext;
         }
 
-        // 添加群聊特有的 need_group_ack
         if ($target_type === 'chatgroups') {
             $body['need_group_ack'] = $need_group_ack;
         }
 
-        // 添加 sync_device
         if ((bool)$sync_device) {
             $body['sync_device'] = true;
         }
 
-        // 添加 routetype
         if ((bool)$isOnline) {
             $body['routetype'] = 'ROUTE_ONLINE';
         }
 
-        $resp = Http::post($uri, $body, $this->auth->headers());
-        if (!$resp->ok()) {
-            return \Easemob\error($resp);
-        }
-        $data = $resp->data();
-        return $data['data'];
+        return $body;
     }
+
 }
