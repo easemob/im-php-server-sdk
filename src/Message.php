@@ -523,7 +523,7 @@ final class Message
      * @param  mixed   $message     消息内容
      * @param  string  $from        表示消息发送者；无此字段 Server 会默认设置为 "from": "admin"，有 from 字段但值为空串 ("") 时请求失败
      * @param  string  $sync_device 消息发送成功后，是否将消息同步给发送方。true：是；false（默认）：否。
-     * @param  boolean $isOnline    该参数值为 true 时，代表 routetype 的值为 “ROUTE_ONLINE”，表示发送消息时只有接收方在线时，才进行消息投递。若接收方离线，将不会收到此条消息。
+     * @param  boolean $isOnline    该参数值为 true 时，代表 routetype 的值为 "ROUTE_ONLINE"，表示发送消息时只有接收方在线时，才进行消息投递。若接收方离线，将不会收到此条消息。
      * @return array                发送给的目标和对应消息 id 的数组或者错误
      */
     private function send($type, $target_type, $target, $message, $from = 'admin', $sync_device = false, $isOnline = false)
@@ -548,6 +548,14 @@ final class Message
             \Easemob\exception('If the message sender is delivered, it cannot be empty');
         }
 
+        // 验证 target_type 的有效值
+        $valid_target_types = ['users', 'chatgroups', 'chatrooms'];
+        if (!in_array($target_type, $valid_target_types)) {
+            \Easemob\exception('Invalid target_type. Must be one of: users, chatgroups, chatrooms');
+        }
+
+        // 处理扩展属性
+        $ext = null;
         if (isset($message['ext'])) {
             if (!$message['ext']) {
                 \Easemob\exception('If there is no extended attribute, please remove the EXT field');
@@ -557,29 +565,57 @@ final class Message
             $ext = $message['ext'];
             unset($message['ext']);
         }
-        
-        if ($type == 'txt') {
-            $msg = array('msg' => $message['msg']);
-        } else {
-            $msg = $message;
+
+        // 处理 roam_ignore_users
+        $roam_ignore_users = isset($message['roam_ignore_users']) ? $message['roam_ignore_users'] : [];
+        if (isset($message['roam_ignore_users'])) {
+            unset($message['roam_ignore_users']);
         }
+        if (!is_array($roam_ignore_users)) {
+            $roam_ignore_users = [];
+        }
+
+        // 处理 need_group_ack (仅用于群聊)
+        $need_group_ack = false;
+        if ($target_type === 'chatgroups') {
+            $need_group_ack = isset($message['need_group_ack']) ? (bool)$message['need_group_ack'] : false;
+            if (isset($message['need_group_ack'])) {
+                unset($message['need_group_ack']);
+            }
+        }
+        
+        // 构建消息体 body
+        $body_content = null;
+        if ($type == 'txt') {
+            $body_content = array('msg' => $message['msg']);
+        } else {
+            $body_content = $message;
+        }
+
+        // 根据消息类型处理 body 内容
         switch ($type) {
             case 'txt':
-                // 文本消息
-                // $msg = array(
-                //     'msg' => $message['msg'],
-                // );
+                // 文本消息，body_content 已经设置
                 break;
             case 'img': case 'audio':
                 // 图片消息 | 语音消息
-                $msg['url'] = $this->auth->getBaseUri() . '/chatfiles/' . $msg['uuid'];
-                unset($msg['uuid']);
+                if (isset($body_content['uuid'])) {
+                    $body_content['url'] = $this->auth->getBaseUri() . '/chatfiles/' . $body_content['uuid'];
+                    unset($body_content['uuid']);
+                }
                 break;
             case 'video':
                 // 视频消息
-                $msg['url'] = $this->auth->getBaseUri() . '/chatfiles/' . $msg['uuid'];
-                $msg['thumb'] = $this->auth->getBaseUri() . '/chatfiles/' . $msg['thumb_uuid'];
-                unset($msg['uuid'], $msg['thumb_uuid']);
+                if (isset($body_content['uuid'])) {
+                    $body_content['url'] = $this->auth->getBaseUri() . '/chatfiles/' . $body_content['uuid'];
+                }
+                if (isset($body_content['thumb_uuid'])) {
+                    $body_content['thumb'] = $this->auth->getBaseUri() . '/chatfiles/' . $body_content['thumb_uuid'];
+                    unset($body_content['thumb_uuid']);
+                }
+                if (isset($body_content['uuid'])) {
+                    unset($body_content['uuid']);
+                }
                 break;
             case 'loc': case 'cmd':
                 // 位置消息 | 透传消息
@@ -606,20 +642,38 @@ final class Message
                 break;
         }
 
-        $msg['type'] = $type;
-        $uri = $this->auth->getBaseUri() . '/messages?useMsgId=true';
-        $body = compact('target_type', 'target', 'msg', 'from');
-        if (isset($ext)) {
+        // 构建请求 URI
+        $uri = $this->auth->getBaseUri() . '/messages/' . $target_type;
+
+        // 构建请求 body
+        $body = array(
+            'from' => $from,
+            'to' => $target,
+            'type' => $type,
+            'body' => $body_content,
+            'roam_ignore_users' => $roam_ignore_users
+        );
+
+        // 添加扩展属性
+        if ($ext !== null) {
             $body['ext'] = $ext;
         }
 
+        // 添加群聊特有的 need_group_ack
+        if ($target_type === 'chatgroups') {
+            $body['need_group_ack'] = $need_group_ack;
+        }
+
+        // 添加 sync_device
         if ((bool)$sync_device) {
             $body['sync_device'] = true;
         }
 
+        // 添加 routetype
         if ((bool)$isOnline) {
             $body['routetype'] = 'ROUTE_ONLINE';
         }
+
         $resp = Http::post($uri, $body, $this->auth->headers());
         if (!$resp->ok()) {
             return \Easemob\error($resp);
